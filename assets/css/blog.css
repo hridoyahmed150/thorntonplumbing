@@ -1,0 +1,122 @@
+
+
+/*Archived*/
+.page-header {
+    padding-bottom: 0;
+    margin: 0;
+    border-bottom: 0;
+}
+
+body.search article.page,
+body.search article.post,
+body.archive article.post,
+body.archive article.page {
+    margin-bottom: 40px;
+}
+
+
+/*Blog Page */
+
+article.c20-post-card {
+    margin-bottom: 30px;
+}
+
+.c20-post-card:not(:last-child) {
+    border-bottom: 1px solid #ddd;
+    padding-bottom: 30px;
+}
+
+.entry-meta {
+    padding: 0;
+    margin-bottom: 10px;
+}
+
+.entry-meta li {
+    list-style: none;
+    display: inline-block;
+}
+
+.entry-meta li {
+    color: #333 !important;
+}
+
+.entry-meta li,
+.entry-meta li a {
+    font-weight: 600 !important;
+    font-size: 15px;
+}
+
+.entry-meta li a {
+    color: #2D3A6D !important;
+}
+.entry-meta li a:hover {
+    text-decoration: underline !important;
+}
+
+.entry-meta li:not(:last-child) {
+    margin-right: 6px;
+    padding-right: 10px;
+    border-right: 2px solid #ddd;
+}
+
+
+.c20-post-card .post-thumbnail img {
+    height: auto;
+}
+
+.c20-post-card header.entry-header * {
+    margin: 0;
+}
+
+@media (min-width: 1199px) {
+
+    .blog-page-post-body {
+        overflow: hidden;
+    }
+
+    .c20-post-card .post-thumbnail {
+        float: left;
+        margin-right: 30px;
+        max-width: 300px;
+    }
+}
+
+.post-footer a.readMore {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.c20_pagination {
+    text-align: center;
+}
+.c20_pagination .page-numbers {
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    display: inline-block;
+    font-size: 16px;
+    font-weight: bold;
+    background-color: #2D3A6D;
+    color: #fff;
+    border-radius: 50%;
+    margin: 0 5px;
+}
+
+.c20_pagination .prev,
+.c20_pagination .next {
+    width: auto;
+    background: transparent;
+    height: auto;
+    color: #2D3A6D;
+    padding: 0 10px;
+}
+
+.c20_pagination span.page-numbers.current {
+    opacity: .5;
+}
+
+.c20_pagination span.page-numbers.dots {
+    width: auto;
+    background: transparent;
+    color: #2D3A6D;
+}

@@ -1,0 +1,133 @@
+
+/*Footer*/
+
+.site-footer {
+    font-size: 15px;
+    padding: 0;
+    background: #EBF0FA;
+}
+
+.site-footer {
+    border-top: 10px solid #2D3A6D;
+}
+
+.site-footer ul {
+    padding-left: 0;
+}
+
+.site-footer ul li {
+    list-style: none;
+}
+
+.footer-top {
+    padding: 80px 0 0;
+    background-size: auto;
+    background-repeat: no-repeat;
+    background-position: top center;
+}
+
+.footer-top .widget {
+    margin-bottom: 40px;
+    text-align: center;
+}
+
+.site-footer .widget-title {
+    font-size: 16px;
+    color: #B38900;
+    font-weight: 600;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+}
+
+.widget_nav_menu ul li a {
+    color: #2D3A6D;
+    font-size: 16px;
+    font-weight: 400;
+    display: inline-block;
+    line-height: 1.86;
+    padding: 6px 0;
+    transition: .3s;
+}
+.widget_nav_menu ul li a:hover {
+    color: #2D3A6D;
+}
+
+.footer-top .col-md-4 .menu {
+    display: flex;
+    width: 100%;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.footer-top .col-md-4 .menu > li {
+    width: 50%;
+}
+
+.footer-top .col-md-4 .menu > li > a {
+    display: inline-block;
+    padding-right: 10px;
+}
+
+.footer-btn-group a {
+    font-size: 16px;
+    padding: 15px 10px;
+    margin-bottom: 15px;
+    text-align: center;
+    white-space: normal;
+}
+
+.footer-bottom {
+    padding: 0 0 40px;
+}
+
+.copyright {
+    font-size: 15px;
+    line-height: 1.7;
+    color: #333333;
+}
+
+.copyright p {
+    margin-bottom: 0;
+}
+
+.copyright a {
+    color: #333333;
+}
+
+
+.footer-bottom .c20_social {
+    justify-content: flex-start;
+}
+
+.footer-bottom .c20_social .icon-fb {
+    background-color: #3B5998;
+}
+
+.footer-bottom .c20_social .icon-tw {
+    background-color: #1DA1F2;
+}
+
+.footer-bottom .c20_social .icon-yt {
+    background-color: #FF0000;
+}
+
+.footer-bottom .c20_social li img  {
+    -webkit-filter: brightness(0) invert(1);
+    filter: brightness(0) invert(1);
+}
+
+@media screen and (min-width: 991px) {
+
+    .footer-top .widget {
+        margin-bottom: 40px;
+        text-align: left;
+    }
+}
+
+@media screen and (min-width: 1440px) {
+
+    .footer-top {
+        padding: 115px 0 40px;
+    }
+}
+

@@ -1,0 +1,187 @@
+
+/*Banner*/
+
+.c20-sec-home-banner {
+    padding: 60px 0;
+}
+
+.home-banner-title {
+    font-size: 35px;
+    line-height: 1.4;
+}
+
+@media screen and ( min-width: 991px ) {
+
+    .c20-sec-home-banner {
+        padding: 100px 0;
+    }
+
+    .home-banner-title {
+        font-size: 50px;
+    }
+
+}
+
+@media screen and ( min-width: 1440px ) {
+
+    .c20-sec-home-banner {
+        padding: 150px 0;
+    }
+
+    .home-banner-title {
+        font-size: 60px;
+    }
+
+}
+
+/*End Banner*/
+
+
+/*Start Testimonial*/
+
+.section-testimonial {
+    padding: 80px 0 80px;
+}
+
+.c20-sec-review-inner {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.c20-sec-review-inner,
+.c20-sec-review-inner * {
+    min-height: 0;
+    min-width: 0;
+}
+
+.price-calculator p {
+    font-size: 16px;
+    color: #333333;
+    font-weight: bold;
+    line-height: 1.5;
+}
+
+.price-calculator .btn span {
+    margin-left: 10px;
+}
+
+.price-calculator .btn {
+    padding: 8px 20px;
+    display: inline-flex;
+    align-items: center;
+    text-transform: initial;
+}
+
+.review-buzz-icon {
+    text-align: center;
+}
+
+@media screen and ( min-width: 991px ) {
+
+    .c20-sec-review-inner {
+        justify-content: space-between;
+    }
+
+    .price-calculator {
+        flex: 0 0 25%;
+        max-width: 25%;
+    }
+
+    .emg-testimonial-slider {
+        flex: 0 0 48%;
+        max-width: 48%;
+    }
+
+    .review-buzz-icon {
+        flex: 0 0 26%;
+        max-width: 26%;
+    }
+}
+
+
+@media screen and ( min-width: 1440px ) {
+
+    .price-calculator {
+        flex: 0 0 18%;
+        max-width: 18%;
+    }
+
+    .emg-testimonial-slider {
+        flex: 0 0 49%;
+        max-width: 49%;
+    }
+}
+
+/*End Testimonial*/
+
+
+
+
+/*Start Service*/
+
+.c20-iconbox-text {
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    font-weight: lighter;
+}
+
+/*End Start Service*/
+
+.coupon-list {
+    align-items: center;
+    justify-content: center;
+}
+
+.coupon-list>div {
+    padding: 0 15px;
+    flex: 0 0 50%;
+}
+
+@media screen and ( min-width: 768px ) {
+    .coupon-list>div {
+        flex: 0 0 33%;
+    }
+}
+
+@media screen and ( min-width: 991px ) {
+    .coupon-list>div {
+        flex: 0 0 20%;
+    }
+}
+
+
+
+/*Start Content*/
+.content-section {
+    background-color: #fff;
+    padding: 80px 0;
+    overflow: hidden;
+}
+
+
+
+@media screen and ( min-width: 1199px ) {
+
+    .inline-cta {
+        padding: 0 100px;
+    }
+
+}
+
+
+@media screen and ( min-width: 1440px ) {
+
+    .inline-cta {
+        padding: 0;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .inline-cta h2 {
+        margin-bottom: 0 !important;
+    }
+
+}
+

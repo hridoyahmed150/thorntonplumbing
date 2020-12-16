@@ -1,0 +1,392 @@
+/*!
+Theme Name: Thorntonplumbing
+Theme URI:
+Author: c20
+Author URI:
+Description: Description
+Version: 1.0.0
+License: GNU General Public License v2 or later
+License URI: LICENSE
+Text Domain: c20
+Tags: custom-background, custom-logo, custom-menu, featured-images, threaded-comments, translation-ready
+*/
+
+/*Coupon*/
+
+.image-coupon .single-coupon {
+	display: none;
+}
+
+.print-coupon {
+    cursor: pointer;
+}
+
+.single-coupon {
+    width: 100%;
+    max-width: 370px;
+    margin: 0 auto 30px;
+    border: 5px dashed #0f3476;
+    position: relative;
+    overflow: hidden;
+    text-align: center;
+}
+
+.single-coupon > img {
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: 0;
+    width: 100%;
+}
+
+.single-coupon > div {
+	position: relative;
+}
+
+.coupon-top {
+    padding: 20px 20px 15px;
+}
+
+.coupon-top img {
+    padding-bottom: 35px;
+    margin-bottom: 30px;
+}
+
+.coupon-price {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 30px;
+    line-height: 1 !important;
+    text-transform: uppercase;
+}
+
+.coupon-price strong {
+    font-size: 60px;
+    line-height: 1;
+    margin: 0 5px;
+}
+
+.coupon-body {
+    background: #e8ed32;
+    padding: 15px 3px 10px;
+}
+
+.coupon-title {
+    font-family: Montserrat;
+    font-size: 22px;
+    line-height: 1;
+    color: #0e3474;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+}
+
+.coupon-body .coupon-subtitle {
+    font-size: 10px;
+    line-height: 1;
+    color: #0e3474;
+    font-weight: 700;
+}
+
+.coupon-footer {
+    background: #0f3476;
+    color: #dceefe;
+    padding: 10px 20px;
+    font-size: 12px;
+}
+
+.coupon-footer a {
+    color: #e8ed32 !important;
+}
+
+@media (max-width: 781px) and (min-width: 600px) {
+
+    .wp-block-column {
+        flex-basis: calc(100%)!important;
+        flex-grow: 0;
+    }
+
+    .wp-block-column:nth-child(2n) {
+        margin-left: 0;
+    }
+}
+
+
+@media screen and (min-width: 1199px) {
+
+    .coupon-top {
+        padding: 25px 35px 15px;
+    }
+
+    .coupon-price strong {
+        font-size: 80px;
+    }
+
+    .coupon-title {
+        font-size: 25px;
+    }
+}
+
+@media screen and (min-width: 1440px) {
+
+    .coupon-top img {
+        padding-bottom: 50px;
+        margin-bottom: 40px;
+    }
+
+    .coupon-price {
+        font-size: 35px;
+        font-weight: 700;
+    }
+
+    .coupon-price strong {
+        font-size: 100px;
+    }
+
+    .coupon-title {
+        font-size: 28px;
+    }
+
+    .coupon-body .coupon-subtitle {
+        font-size: 12px;
+    }
+
+    .coupon-footer {
+        font-size: 13px;
+    }
+
+}
+
+
+/*End Coupon*/
+
+@media print {
+    #main-header,
+    #main-navigation,
+    .banner-page,
+    .breadcrumbs,
+    #sidebar,
+    .logos-home,
+    #main-footer,
+    #fixed-cta,
+    .wpcf7-submit {
+        display: none !important;
+    }
+    body{
+        color: #ff0000;
+    }
+    input{
+        height: 50px;
+    }
+    section{
+        margin-bottom: 60px;
+    }
+}
+
+
+/*--------------------------------------------------------------
+# Accessibility
+--------------------------------------------------------------*/
+/* Text meant only for screen readers. */
+.screen-reader-text {
+	border: 0;
+	clip: rect(1px, 1px, 1px, 1px);
+	clip-path: inset(50%);
+	height: 1px;
+	margin: -1px;
+	overflow: hidden;
+	padding: 0;
+	position: absolute !important;
+	width: 1px;
+	word-wrap: normal !important; /* Many screen reader and browser combinations announce broken words as they would appear visually. */
+}
+
+.screen-reader-text:focus {
+	background-color: #f1f1f1;
+	border-radius: 3px;
+	box-shadow: 0 0 2px 2px rgba(0, 0, 0, 0.6);
+	clip: auto !important;
+	clip-path: none;
+	color: #21759b;
+	display: block;
+	font-size: 14px;
+	font-size: 0.875rem;
+	font-weight: bold;
+	height: auto;
+	left: 5px;
+	line-height: normal;
+	padding: 15px 23px 14px;
+	text-decoration: none;
+	top: 5px;
+	width: auto;
+	z-index: 100000;
+	/* Above WP toolbar. */
+}
+
+/* Do not show the outline on the skip link target. */
+#content[tabindex="-1"]:focus {
+	outline: 0;
+}
+
+/*--------------------------------------------------------------
+# Alignments
+--------------------------------------------------------------*/
+.alignleft {
+	display: inline;
+	float: left;
+	margin-right: 1.5em;
+}
+
+.alignright {
+	display: inline;
+	float: right;
+	margin-left: 1.5em;
+}
+
+.aligncenter {
+	clear: both;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+/*--------------------------------------------------------------
+# Clearings
+--------------------------------------------------------------*/
+.clear:before,
+.clear:after,
+.entry-content:before,
+.entry-content:after,
+.comment-content:before,
+.comment-content:after,
+.site-header:before,
+.site-header:after,
+.site-content:before,
+.site-content:after {
+	content: "";
+	display: table;
+	table-layout: fixed;
+}
+
+.clear:after,
+.entry-content:after,
+.comment-content:after,
+.site-header:after,
+.site-content:after {
+	clear: both;
+}
+
+
+
+
+/*--------------------------------------------------------------
+# Infinite scroll
+--------------------------------------------------------------*/
+/* Globally hidden elements when Infinite Scroll is supported and in use. */
+.infinite-scroll .posts-navigation,
+.infinite-scroll.neverending .site-footer {
+	/* Theme Footer (when set to scrolling) */
+	display: none;
+}
+
+/* When Infinite Scroll has reached its end we need to re-display elements that were hidden (via .neverending) before. */
+.infinity-end.neverending .site-footer {
+	display: block;
+}
+
+/*--------------------------------------------------------------
+# Media
+--------------------------------------------------------------*/
+.page-content .wp-smiley,
+.entry-content .wp-smiley,
+.comment-content .wp-smiley {
+	border: none;
+	margin-bottom: 0;
+	margin-top: 0;
+	padding: 0;
+}
+
+/* Make sure embeds and iframes fit their containers. */
+embed,
+iframe,
+object {
+	max-width: 100%;
+}
+
+/* Make sure logo link wraps around logo image. */
+.custom-logo-link {
+	display: inline-block;
+}
+
+/*--------------------------------------------------------------
+## Captions
+--------------------------------------------------------------*/
+.wp-caption {
+	margin-bottom: 1.5em;
+	max-width: 100%;
+}
+
+.wp-caption img[class*="wp-image-"] {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.wp-caption .wp-caption-text {
+	margin: 0.8075em 0;
+}
+
+.wp-caption-text {
+	text-align: center;
+}
+
+/*--------------------------------------------------------------
+## Galleries
+--------------------------------------------------------------*/
+.gallery {
+	margin-bottom: 1.5em;
+}
+
+.gallery-item {
+	display: inline-block;
+	text-align: center;
+	vertical-align: top;
+	width: 100%;
+}
+
+.gallery-columns-2 .gallery-item {
+	max-width: 50%;
+}
+
+.gallery-columns-3 .gallery-item {
+	max-width: 33.33%;
+}
+
+.gallery-columns-4 .gallery-item {
+	max-width: 25%;
+}
+
+.gallery-columns-5 .gallery-item {
+	max-width: 20%;
+}
+
+.gallery-columns-6 .gallery-item {
+	max-width: 16.66%;
+}
+
+.gallery-columns-7 .gallery-item {
+	max-width: 14.28%;
+}
+
+.gallery-columns-8 .gallery-item {
+	max-width: 12.5%;
+}
+
+.gallery-columns-9 .gallery-item {
+	max-width: 11.11%;
+}
+
+.gallery-caption {
+	display: block;
+}
