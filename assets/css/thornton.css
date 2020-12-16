@@ -1,26 +1,79 @@
 /*banner-section*/
-.banner-top{
+.banner-top {
     padding: 10%;
 }
-.banner-top img.slogan{
+
+.banner-top img.slogan {
     position: absolute;
-    left: 125px;
+    left: 215px;
     bottom: 125px;
     width: 400px;
     z-index: 1;
 }
 
-.banner-bottom .overlay{
+.banner-bottom .overlay {
     width: 100%;
     height: 100%;
     top: 0;
     left: 0;
     right: 0;
     bottom: 0;
-    background-color: rgba(0,0,0,0.85);
+    background-color: rgba(0, 0, 0, 0.85);
 }
 
-.banner-bottom .read-more{
+.banner-bottom .read-more {
     font-size: 18px;
     text-decoration: underline;
 }
+
+
+/*utility section style*/
+
+.c20-sec-utility {
+    background-color: #172750
+}
+
+.c20-sec-utility .service-list .c20-iconbox {
+    padding: 60px 0px;
+}
+
+.c20-iconbox {
+    padding: 0 15px;
+    flex: 0 0 50%
+}
+
+.c20-iconbox-thumb {
+    width: 138px;
+    height: 138px;
+    margin: 0 auto 10px;
+    border-radius: 50%;
+    display: flex;
+    border: 9px solid #fff
+}
+
+.c20-iconbox-thumb {
+    background: linear-gradient(#F8E03E, #B98E00);
+}
+
+.c20-iconbox-thumb img {
+    margin: auto
+}
+
+.c20-iconbox-body {
+    max-width: 138px;
+    margin: 0 auto
+}
+
+@media screen and (min-width: 768px) {
+    .service-list .c20-iconbox {
+        flex: 0 0 33%
+    }
+}
+
+@media screen and (min-width: 1199px) {
+    .service-list .c20-iconbox {
+        flex: 0 0 16.66%
+    }
+}
+
+

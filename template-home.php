@@ -24,13 +24,15 @@ $bbb_url 				= c20_cmb2_get_social('social_bbb_url');
 
 include 'sections/home/banner.php';
 
-include 'sections/home/testimonials.php';
+include 'sections/home/utility.php';
 
-include 'sections/home/service.php';
+    include 'sections/home/content.php';
 
-include 'sections/home/content.php';
+    include 'sections/home/testimonials.php';
 
-include 'sections/home/cta.php';
+    include 'sections/home/service.php';
+
+    include 'sections/home/cta.php';
 
 include 'sections/service-area.php';
 
