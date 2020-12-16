@@ -10,7 +10,7 @@ $phone      = c20_cmb2_get_general('general_phone');
 $wh_page    = c20_cmb2_get_general('general_wh_page');  ?>
  
 
-<div class="c20-sec has-image-bg c20-sec-home-banner" style="background-image: url(<?php echo $img_dir; ?>/banner-home.png);">
+<div class="c20-sec has-image-bg c20-sec-home-banner pb-0" style="background-image: url(<?php echo $img_dir; ?>/banner-home.png);">
 
 <!--    <div class="container">-->
 <!---->
@@ -29,12 +29,19 @@ $wh_page    = c20_cmb2_get_general('general_wh_page');  ?>
     <div class="banner-top">
         <img class="slogan" src="<?php  echo $img_dir;?>/slogan.png" alt="">
     </div>
-    <div class="banner-bottom position-relative">
+    <div class="banner-bottom position-relative py-4">
         <div class="overlay position-absolute"></div>
         <div class="container">
             <div class="row">
-                <div class="col-sm-12">
-                    <h2>What our customers say about us</h2>
+                <div class="col-sm-10">
+                    <h2 class="text-white">What our customers say about us</h2>
+                    <h6 class="text-white">“I'm taking this opportunity to let you know how pleased I am with the work your employees have done in correcting the mess…” - Mrs. Conor
+                        Read more Testimonials
+                        <a href="#">
+                            <span class="text-yellow">- Mrs. Conor</span>
+                        </a>
+                    </h6>
+                    <a href="#" class="read-more text-yellow">Read more Testimonials</a>
                 </div>
             </div>
         </div>
