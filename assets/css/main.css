@@ -130,7 +130,7 @@
 
 .coupon-list {
     align-items: center;
-    justify-content: center;
+    /*justify-content: center;*/
 }
 
 .coupon-list>div {
@@ -140,13 +140,13 @@
 
 @media screen and ( min-width: 768px ) {
     .coupon-list>div {
-        flex: 0 0 33%;
+        /*flex: 0 0 33%;*/
     }
 }
 
 @media screen and ( min-width: 991px ) {
     .coupon-list>div {
-        flex: 0 0 20%;
+        /*flex: 0 0 20%;*/
     }
 }
 

@@ -3,12 +3,16 @@
     padding: 10%;
 }
 
-.banner-top img.slogan {
+img.slogan {
     position: absolute;
+    width: 400px;
+    z-index: 1;
+}
+
+.banner-top img.slogan {
     left: 215px;
     bottom: 125px;
     width: 400px;
-    z-index: 1;
 }
 
 .banner-bottom .overlay {
@@ -76,4 +80,138 @@
     }
 }
 
+/*content section*/
 
+.c20-sec-content {
+    padding: 100px 0px;
+}
+
+.c20-sec-content p.h6 {
+    color: #333333;
+    line-height: 34px;
+    font-weight: 500;
+}
+
+.coupon-slogan img.slogan {
+    bottom: -150px;
+    right: -100px;
+}
+
+/*testimonial section*/
+
+.c20-sec-testimonial{
+    background: #EBF0FA;
+}
+
+.wh-image-wrap {
+    box-shadow: 0 2px 20px 0 rgba(0, 0, 0, .3);
+    background: #fff;
+    padding: 8%
+}
+
+.wh-image-wrap img {
+    width: 100%;
+    height: auto
+}
+
+.wh-right {
+    max-width: 100%
+}
+
+.label-circle {
+    background-image: url(//www.reicheltplumbing.com/wp-content/themes/reicheltplumbing/assets/css/../img/red-circle.png);
+    background-repeat: no-repeat;
+    background-size: auto;
+    padding-bottom: 10px;
+}
+
+@media screen and (min-width: 768px) {
+    .wh-image-wrap {
+        padding: 2% 2%
+    }
+
+    .wh-right {
+        width: 50%;
+        position: relative
+    }
+
+    .wh-left {
+        width: 50%;
+        padding-left: 5%;
+        padding-top: 5%;
+        padding-right: 15px
+    }
+}
+
+@media screen and (min-width: 1199px) {
+    .testimonial-text, .testimonial-info {
+        font-size: 17px;
+        line-height: 1.8
+    }
+
+    .testimonial-text {
+        font-size: 20px;
+        padding: 0 30px
+    }
+
+    .testimonial-text:before, .testimonial-text:after {
+        width: 28px;
+        height: 20px
+    }
+
+    .testimonial-text:before {
+        top: 8px
+    }
+
+    .testimonial-text:after {
+        bottom: 8px
+    }
+
+    .wh-image-wrap {
+        margin-top: -90px;
+        padding: 8% 10%
+    }
+}
+
+@media screen and (min-width: 1440px) {
+    .wh-left {
+        width: 50%;
+        padding: 5% 5%
+    }
+}
+
+@media screen and (min-width: 1600px) {
+    .wh-image-wrap {
+        margin-top: -130px
+    }
+
+    .wh-left h2 {
+        margin-bottom: 30px !important
+    }
+}
+
+@media screen and (min-width: 1680px) {
+    .wh-image-wrap {
+        margin-top: -140px;
+        padding: 2% 2%
+    }
+
+    .wh-left {
+        padding: 1% 10%
+    }
+}
+
+.point{
+    padding-top: 20px;
+}
+
+/*our client section*/
+
+.c20-sec-our-client{
+    background: #ebf0fa;
+}
+.client{
+    max-width: 300px;
+    min-width: 165px;
+    padding: 0 15px;
+}
