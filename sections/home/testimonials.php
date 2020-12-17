@@ -182,4 +182,8 @@ $testimonial = $clients_name = $clients_role = '';
 
         </div>
     </div>
-</div> <!-- end section -->
+</div>
+
+<div class="c20-sec c20-review-img has-image-bg " style="background-image: url(<?php echo $img_dir?>/footer-banner.png)">
+</div>
+<!-- end section -->
