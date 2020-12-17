@@ -100,13 +100,15 @@ jQuery(window).load(function(){
 
 
 
-	$('.emg-testimonial-slider-init').slick({
+	$('.testimonial-slider-init').slick({
 		slidesToShow: 1,
 		slidesToScroll: 1,
-		arrows: false,
-		dots: true,
+		arrows: true,
+		dots: false,
 		fade: false,
 		adaptiveHeight: true,
+		prevArrow: $('.prev'),
+		nextArrow: $('.next')
 	});
 
 

@@ -64,38 +64,38 @@ $testimonial = $clients_name = $clients_role = '';
 <div class="c20-sec-our-client">
     <div class="container-fluid">
         <div class="row">
-            <div class="col-xs-12 d-flex justify-content-between align-items-center">
-                <div class="client">
+            <div class="col-xs-12 d-flex justify-content-between align-items-center flex-wrap">
+                <div class="client py-3">
                     <img src="<?php echo $img_dir; ?>/client-1.png" alt="client">
                 </div>
-                <div class="client">
+                <div class="client py-3">
                     <img src="<?php echo $img_dir; ?>/client-2.png" alt="client">
                 </div>
-                <div class="client">
+                <div class="client py-3">
                     <img src="<?php echo $img_dir; ?>/client-3.png" alt="client">
                 </div>
-                <div class="client">
+                <div class="client py-3">
                     <img src="<?php echo $img_dir; ?>/client-4.png" alt="client">
                 </div>
-                <div class="client">
+                <div class="client py-3">
                     <img src="<?php echo $img_dir; ?>/client-5.png" alt="client">
                 </div>
-                <div class="client">
+                <div class="client py-3">
                     <img src="<?php echo $img_dir; ?>/client-6.png" alt="client">
                 </div>
-                <div class="client">
+                <div class="client py-3">
                     <img src="<?php echo $img_dir; ?>/client-7.png" alt="client">
                 </div>
-                <div class="client">
+                <div class="client py-3">
                     <img src="<?php echo $img_dir; ?>/client-8.png" alt="client">
                 </div>
-                <div class="client">
+                <div class="client py-3">
                     <img src="<?php echo $img_dir; ?>/client-9.png" alt="client">
                 </div>
-                <div class="client">
+                <div class="client py-3">
                     <img src="<?php echo $img_dir; ?>/client-10.png" alt="client">
                 </div>
-                <div class="client">
+                <div class="client py-3">
                     <img src="<?php echo $img_dir; ?>/client-11.png" alt="client">
                 </div>
             </div>
@@ -109,30 +109,43 @@ $testimonial = $clients_name = $clients_role = '';
     <div class="container">
 
 
-        <div class="row">
+        <div class="row review-content">
 
-            <div class="col-md-12 c20-sec-review-inner">
-
-                <div class="price-calculator mb-5 text-center" data-aos-duration="500" data-aos-delay="500"
-                     data-aos="fade-right">
-
-                    <p class="mb-2">Price Your Job in 60 Seconds</p>
-
-                    <a href="https://solo.servicewhale.com/request/wizard?contrid=5782" class="btn btn-primary mb-4 "
-                       target="_blank">
-                        <img src="<?php echo $img_dir; ?>/usd.png" alt="">
-                        <span>Price Calculator</span>
-                    </a>
-
-                    <?php echo do_shortcode('[c20_social]'); ?>
+            <div class="col-md-6 c20-sec-review-inner mt-3 d-flex flex-column justify-content-start">
+                <div class="group-review text-center mb-5 d-flex justify-content-center">
+                    <div class="facebook-review media-review px-3">
+                        <img src="<?php echo $img_dir; ?>/ionsocialfacebook.png" alt="">
+                        <p class="text-white m-0" >Facebook 5</p>
+                        <p class="text-white m-0">5</p>
+                        <img class="star" src="<?php echo $img_dir;?>/control/testimonial-star.png" alt="">
+                        <p class="review-count text-white m-0">12 + Reviews</p>
+                    </div>
+                    <div class="facebook-review media-review px-3">
+                        <img src="<?php echo $img_dir; ?>/Bitmap.png" alt="">
+                        <p class="text-white m-0">Yelp</p>
+                        <p class="rating text-white m-0">5</p>
+                        <img class="star" src="<?php echo $img_dir;?>/control/testimonial-star.png" alt="">
+                        <p class="review-count text-white m-0">12 + Reviews</p>
+                    </div>
+                    <div class="facebook-review media-review px-3">
+                        <img src="<?php echo $img_dir; ?>/googleFontAwesome.png" alt="">
+                        <p class="text-white m-0">Google</p>
+                        <p class="rating text-white m-0">5</p>
+                        <img class="star" src="<?php echo $img_dir;?>/control/testimonial-star.png" alt="">
+                        <p class="review-count text-white m-0">12 + Reviews</p>
+                    </div>
                 </div>
-
+                <div class="review-logo text-center">
+                    <img src="<?php echo $img_dir;?>/review-logo.png" alt="review-logo">
+                </div>
+            </div>
+            <div class="col-sm-6 c20-sec-review-slider">
                 <?php if ($testimonials) : ?>
 
-                    <div class="emg-testimonial-slider mb-5 mb-sm-4" data-aos-duration="500" data-aos-delay="400"
+                    <div class="testimonial-slider" data-aos-duration="500" data-aos-delay="400"
                          data-aos="fade-up">
 
-                        <div class="emg-testimonial-slider-init">
+                        <div class="testimonial-slider-init mb-4">
 
                             <?php foreach ((array)$testimonials as $key => $testimonial_data) :
 
@@ -143,36 +156,28 @@ $testimonial = $clients_name = $clients_role = '';
                                 <div class="testimonial-slide">
 
                                     <div class="testimonial-text">
-                                        <?php echo $testimonial; ?>
+                                        <h6 class="text-white font-italic"><?php echo $testimonial; ?></h6>
                                     </div>
 
                                     <div class="testimonial-info">
-                                        <div class="testimonial-title"><?php echo $clients_name; ?></div>
-                                        <div class="testimonial-role"><?php echo $clients_role; ?></div>
+                                        <div class="testimonial-title text-white font-italic">- <?php echo $clients_name; ?></div>
                                     </div>
 
                                 </div>
 
                             <?php endforeach; ?>
                         </div>
+                        <div class="paginator position-relative">
+                            <span class="prev position-absolute d-flex justify-content-center align-items-center">
+                                <img src="<?php echo $img_dir; ?>/control/btn-arrow.png" alt="arrow">
+                            </span>
+                            <span class="next position-absolute d-flex justify-content-center align-items-center">
+                                <img src="<?php echo $img_dir; ?>/control/btn-arrow.png" alt="arrow">
+                            </span>
+                        </div>
                     </div>
 
                 <?php endif; ?>
-
-
-                <div class="review-buzz-icon" data-aos-duration="500" data-aos-delay="500" data-aos="fade-left">
-
-                    <script async type="text/javascript"
-                            src="//www.reviewbuzz.com/app/public/js/widget.js?id=1323"></script>
-                    <noscript>
-                        <a href="//www.reviewbuzz.com/web-widget/RicksPlumbingServiceInc" style="font-size:12px;">
-                            <img width="170" style="cursor: pointer"
-                                 src="//www.reviewbuzz.com/app/public/images/popup-widget/reviewbuzz_widget_icon.png"
-                                 alt="Ricks Plumbing Service Inc - 152 Customer Reviews - Milford, CT"><br>Ricks
-                            Plumbing Service Inc - 152 Customer Reviews - Milford, CT</a>
-                    </noscript>
-                </div>
-
             </div>
 
         </div>

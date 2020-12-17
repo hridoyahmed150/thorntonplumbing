@@ -211,7 +211,64 @@ img.slogan {
     background: #ebf0fa;
 }
 .client{
-    max-width: 300px;
-    min-width: 165px;
+    max-width: 150px;
     padding: 0 15px;
+}
+
+/*review section*/
+
+.c20-sec-review-inner{
+
+}
+.review-content{
+    background: rgba(10, 40, 86 ,.7);
+    padding: 10% 1%;
+}
+.media-review img.star{
+    width: 80%;
+}
+.review-logo img{
+    max-width: 200px;
+}
+
+
+/*review slider*/
+
+.paginator {
+
+}
+.testimonial-text h6{
+    line-height: 34px;
+    font-weight: 500;
+}
+.testimonial-info{
+    padding: 0 30px;
+}
+.testimonial-title{
+    font-size: 20px;
+    font-weight: 700;
+}
+.paginator span{
+    width: 40px;
+    height: 40px;
+    background: rgba(255,255,255,0.24);
+    cursor: pointer;
+}
+.paginator span:hover{
+    background: #F7BC00;
+}
+.paginator span.prev{
+    transform-origin: center;
+    transform: rotate(180deg);
+    bottom: -40px;
+    left: 25px;
+    border-radius: 50%;
+    transition: .5s;
+ }
+
+.paginator span.next{
+    left: 80px;
+    bottom: -40px;
+    border-radius: 50%;
+    transition: .5s;
 }

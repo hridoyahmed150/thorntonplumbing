@@ -605,74 +605,11 @@ a.text-secondary:focus,
 
 
 /*Testimonial Slider*/
-.testimonial-text,
-.testimonial-info {
-    font-size: 17px;
+.testimonial-text{
+    font-size: 18px;
     line-height: 1.8;
-    color: #333333;
+    color: #FFFFFF;
     position: relative;
-}
-
-.testimonial-text {
-    background: #fff;
-    padding: 20px;
-    box-shadow: 0 2px 6px 0 rgba(0,0,0,.08);
-    border-radius: 6px;
-    margin-bottom: 30px;
-    font-size: 16px;
-    font-style: italic;
-}
-
-.testimonial-text:before {
-    content: '';
-    position: absolute;
-    width: 0;
-    height: 0;
-    border-left: 0 solid transparent;
-    border-right: 20px solid transparent;
-    border-top: 22px solid #fff;
-    bottom: -20px;
-    left: 50px;
-}
-
-.testimonial-info {
-    outline: none;
-    position: relative;
-    padding-left: 130px;
-    background-image: url('../img/control/testimonial-star.png');
-    background-repeat: no-repeat;
-    background-position: left center;
-    background-size: 110px;
-}
-
-.testimonial-info:after {
-    content: '';
-    width: 70px;
-    height: 3px;
-    background-color: transparent;
-    position: absolute;
-    bottom: 0;
-    left: 0;
-}
-
-.testimonial-info > div {
-    font-size: 14px;
-    line-height: 1.6;
-    color: #333333;
-}
-
-.testimonial-title {
-    font-weight: 400;
-    font-size: 14px;
-}
-
-.testimonial-title span {
-    font-size: 16px;
-    font-weight: 700;
-}
-
-.testimonial-role {
-    font-weight: 400;
 }
 
 .emg-testimonial-slider .slick-dots {
