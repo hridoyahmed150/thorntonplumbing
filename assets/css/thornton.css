@@ -234,6 +234,10 @@ img.slogan {
 
 /*review slider*/
 
+.c20-sec-review{
+    background-image: linear-gradient( #EBF0FA, #FFFFFF);
+}
+
 .paginator {
 
 }

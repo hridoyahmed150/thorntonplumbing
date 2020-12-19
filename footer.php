@@ -123,25 +123,25 @@
 
 		</div>
 
-		<div class="footer-bottom">
-
-			<div class="container">
-
-				<div class="row">
-
-					<div class="col-sm-12">
-						<div class="pb-4 mb-3" style="border-top: 1px solid rgba(0,0,0,0.1);"></div>
-					</div>
-				
-					<div class="col-sm-12 copyright text-center">
-						<?php echo do_shortcode( $footer_text ); ?>
-					</div>
-					
-				</div>
-
-			</div>
-
-		</div>
+<!--		<div class="footer-bottom">-->
+<!---->
+<!--			<div class="container">-->
+<!---->
+<!--				<div class="row">-->
+<!---->
+<!--					<div class="col-sm-12">-->
+<!--						<div class="pb-4 mb-3" style="border-top: 1px solid rgba(0,0,0,0.1);"></div>-->
+<!--					</div>-->
+<!--				-->
+<!--					<div class="col-sm-12 copyright text-center">-->
+<!--						--><?php //echo do_shortcode( $footer_text ); ?>
+<!--					</div>-->
+<!--					-->
+<!--				</div>-->
+<!---->
+<!--			</div>-->
+<!---->
+<!--		</div>-->
 
 	</footer>
 

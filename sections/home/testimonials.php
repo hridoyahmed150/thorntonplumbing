@@ -103,7 +103,7 @@ $testimonial = $clients_name = $clients_role = '';
     </div>
 </div>
 
-<div class="c20-sec py-5 c20-sec-gray c20-sec-review">
+<div class="c20-sec py-5 c20-sec-review">
 
 
     <div class="container">
