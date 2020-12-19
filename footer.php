@@ -49,6 +49,28 @@
 
 
 	<footer id="colophon" class="site-footer">
+        <div class="header-top">`
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-8 d-flex justify-content-end align-items-center">
+<!--                        <p class="m-0">We’re open! Actions We Are Taking Regarding the COVID-19.</p>-->
+                    </div>
+                    <div class="col-sm-4 d-flex justify-content-end align-items-center">
+
+                        <?php echo do_shortcode( '[c20_social]' ); ?>
+
+                        <!--								--><?php //if($google_review): ?>
+                        <!--									<a class="g-review ml-3" href="--><?php //echo esc_url($google_review); ?><!--">-->
+                        <!--										<img src="--><?php //echo $img_dir; ?><!--/google-review.png" alt="Google Review">-->
+                        <!--									</a>-->
+                        <!--								--><?php //endif; ?>
+
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
 
 		<div class="footer-top lozad" data-background-image=<?php echo $img_dir; ?>/foorter-bg.png">
 
