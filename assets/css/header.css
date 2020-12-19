@@ -2,7 +2,8 @@
 /*Main Header*/
 
 @media screen and (max-width: 1920px) {
-    .site-header .container {
+    .site-header .container,
+    .site-footer .container{
         max-width: 1710px;
         width: 100%;
     }

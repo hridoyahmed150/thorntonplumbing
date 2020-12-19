@@ -9,6 +9,7 @@
  * @package c20
  */
 
+    $temp_dir = get_template_directory_uri();
 	$img_dir 		= get_template_directory_uri().'/assets/img';
 	$footer_text 	= c20_cmb2_get_footer('footer_text'); 
 	$footer_scripts = c20_cmb2_get_footer('footer_scripts'); 
@@ -72,7 +73,7 @@
 
         </div>
 
-		<div class="footer-top lozad" data-background-image=<?php echo $img_dir; ?>/foorter-bg.png">
+		<div class="footer-bottom lozad" data-background-image=<?php echo $img_dir; ?>/drop.png" style="background-image: url(<?php echo $img_dir; ?>/drop.png);">
 
 			<div class="container">
 
@@ -99,6 +100,15 @@
 
 						<?php else : ?>
 
+                        <div class="coll-md-12 col-lg-3">
+                            <a class="navbar-brand" href="<?php echo $site_url; ?>">
+                                <?php if($site_logo): ?>
+                                    <img src="<?php echo esc_url( $site_logo); ?>" alt="<?php echo bloginfo('name'); ?>">
+                                <?php else : ?>
+                                    <img class="static-img" src="<?php echo $temp_dir; ?>/assets/img/site-logo.png" alt="<?php echo bloginfo('name'); ?>">
+                                <?php endif; ?>
+                            </a>
+                        </div>
 
 						<div class="col-md-12 col-lg-4" data-aos="fade-up" data-aos-duration="600" data-aos-delay="200">
 							<?php dynamic_sidebar( 'footer-1' ); ?>
