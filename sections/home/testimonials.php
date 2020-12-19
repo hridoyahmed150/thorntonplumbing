@@ -109,7 +109,7 @@ $testimonial = $clients_name = $clients_role = '';
     <div class="container">
 
 
-        <div class="row review-content">
+        <div class="row has-image-bg review-content" style="background-image: url(<?php echo $img_dir;?>/review-bg.png)">
 
             <div class="col-md-6 c20-sec-review-inner mt-3 d-flex flex-column justify-content-start">
                 <div class="group-review text-center mb-5 d-flex justify-content-center">

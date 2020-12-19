@@ -180,7 +180,7 @@ $site_url = ($is_wh_page) ? $wh_page : site_url('/');
 <!--			--><?php //endif; ?>
 
 
-			<div class="header-bottom has-image-bg" style="background-image: url(<?php echo $img_dir; ?>/drop.png);">
+			<div class="header-bottom has-image-bg" style="background-image: url(<?php echo $img_dir; ?>/drop-shadow.png);">
 				
 				<div class="container">
 					<div class="row">

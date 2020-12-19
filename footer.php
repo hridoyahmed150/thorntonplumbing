@@ -73,7 +73,7 @@
 
         </div>
 
-		<div class="footer-bottom lozad" data-background-image=<?php echo $img_dir; ?>/drop.png" style="background-image: url(<?php echo $img_dir; ?>/drop.png);">
+		<div class="footer-bottom lozad has-image-bg" style="background-image: url(<?php echo $img_dir; ?>/drop-shadow.png);">
 
 			<div class="container">
 

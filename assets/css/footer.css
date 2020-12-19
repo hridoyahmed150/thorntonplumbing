@@ -31,6 +31,12 @@
     text-align: center;
 }
 
+.footer-bottom{
+    background-position: center;
+    background-repeat: repeat-x;
+    -webkit-background-size: 17% 100%;
+    background-size: 17% 100%;
+}
 .site-footer .widget-title {
     font-size: 16px;
     color: #B38900;
