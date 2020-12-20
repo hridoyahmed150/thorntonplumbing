@@ -47,7 +47,7 @@ article.c20-post-card {
 }
 
 .entry-meta li a {
-    color: #2D3A6D !important;
+    color: #172750 !important;
 }
 .entry-meta li a:hover {
     text-decoration: underline !important;
@@ -96,7 +96,7 @@ article.c20-post-card {
     display: inline-block;
     font-size: 16px;
     font-weight: bold;
-    background-color: #2D3A6D;
+    background-color: #172750;
     color: #fff;
     border-radius: 50%;
     margin: 0 5px;
@@ -107,7 +107,7 @@ article.c20-post-card {
     width: auto;
     background: transparent;
     height: auto;
-    color: #2D3A6D;
+    color: #172750;
     padding: 0 10px;
 }
 
@@ -118,5 +118,5 @@ article.c20-post-card {
 .c20_pagination span.page-numbers.dots {
     width: auto;
     background: transparent;
-    color: #2D3A6D;
+    color: #172750;
 }

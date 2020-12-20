@@ -68,7 +68,7 @@ Tags: custom-background, custom-logo, custom-menu, featured-images, threaded-com
 }
 
 .coupon-body {
-    background: #e8ed32;
+    background: #EEBE1D;
     padding: 15px 3px 10px;
 }
 
@@ -76,7 +76,7 @@ Tags: custom-background, custom-logo, custom-menu, featured-images, threaded-com
     font-family: Montserrat;
     font-size: 22px;
     line-height: 1;
-    color: #0e3474;
+    color: #172750;
     font-weight: bold;
     text-transform: uppercase;
     margin-bottom: 10px;
@@ -85,19 +85,19 @@ Tags: custom-background, custom-logo, custom-menu, featured-images, threaded-com
 .coupon-body .coupon-subtitle {
     font-size: 10px;
     line-height: 1;
-    color: #0e3474;
+    color: #172750;
     font-weight: 700;
 }
 
 .coupon-footer {
-    background: #0f3476;
+    background: #172750;
     color: #dceefe;
     padding: 10px 20px;
     font-size: 12px;
 }
 
 .coupon-footer a {
-    color: #e8ed32 !important;
+    color: #EEBE1D !important;
 }
 
 @media (max-width: 781px) and (min-width: 600px) {

@@ -5,7 +5,7 @@
 
  ?>	
 
-<div class="c20-sec pb-3 pb-md-4 has-image-bg lozad" style="background-color:#1F659C;" data-background-image="<?php echo $img_dir; ?>/service-bg.png">
+<div class="c20-sec pb-3 pb-md-4 has-image-bg lozad" style="background-color:#172750;" data-background-image="<?php echo $img_dir; ?>/service-bg.png">
 	<div class="container">
 
 		<?php if($service_heading) : ?>

@@ -55,7 +55,7 @@
     transition: .3s;
 }
 .widget_nav_menu ul li a:hover {
-    color: #2D3A6D;
+    color: #172750;
 }
 
 .footer-top .col-md-4 .menu {
@@ -115,11 +115,11 @@ address .address{
 }
 
 .footer-bottom .c20_social .icon-fb {
-    background-color: #3B5998;
+    background-color: #172750;
 }
 
 .footer-bottom .c20_social .icon-tw {
-    background-color: #1DA1F2;
+    background-color: #172750;
 }
 
 .footer-bottom .c20_social .icon-yt {
