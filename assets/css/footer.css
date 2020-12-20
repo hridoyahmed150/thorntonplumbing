@@ -37,18 +37,18 @@
     -webkit-background-size: 17% 100%;
     background-size: 17% 100%;
 }
-.site-footer .widget-title {
-    font-size: 16px;
-    color: #B38900;
-    font-weight: 600;
-    text-transform: uppercase;
-    margin-bottom: 20px;
-}
+/*.site-footer .widget-title {*/
+/*    font-size: 16px;*/
+/*    color: #B38900;*/
+/*    font-weight: 600;*/
+/*    text-transform: uppercase;*/
+/*    margin-bottom: 20px;*/
+/*}*/
 
 .widget_nav_menu ul li a {
-    color: #2D3A6D;
+    color: #FFFFFF;
     font-size: 16px;
-    font-weight: 400;
+    font-weight: 300;
     display: inline-block;
     line-height: 1.86;
     padding: 6px 0;
@@ -86,11 +86,20 @@
     padding: 0 0 40px;
 }
 
+.footer-bottom .address{
+    font-weight: 300;
+}
+
+address .address{
+    padding-right: 50%;
+}
+
 .copyright {
     font-size: 15px;
     line-height: 1.7;
-    color: #333333;
+    color: #ffffff;
 }
+
 
 .copyright p {
     margin-bottom: 0;

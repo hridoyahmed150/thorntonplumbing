@@ -43,6 +43,7 @@ $blurb_image = $blurb_link = '';
 
 			$coupons = get_post_meta( get_the_ID(), $landing_meta.'coupons', true );
 			$coupon_title = $coupon_image = $coupon_subtitle =  $coupon_amount = $coupon_description = '';
+			var_dump($landing_meta);
 		 ?>
 
 		<?php if($coupons) : ?>
