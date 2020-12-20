@@ -43,7 +43,7 @@ $blurb_image = $blurb_link = '';
 
 			$coupons = get_post_meta( get_the_ID(), $landing_meta.'coupons', true );
 			$coupon_title = $coupon_image = $coupon_subtitle =  $coupon_amount = $coupon_description = '';
-			var_dump($landing_meta);
+//			var_dump($landing_meta);
 		 ?>
 
 		<?php if($coupons) : ?>
@@ -63,7 +63,13 @@ $blurb_image = $blurb_link = '';
 						<div class="mb-4 mb-lg-0 image-coupon" data-aos-duration="500" data-aos-delay="500" data-aos="zoom-in">
 
 							<div class="print-coupon">
-
+                                <div class="coupon">
+                                    <div class="coupon-top d-flex justify-content-between">
+                                        <img src="<?php echo $img_dir; ?>/coupon-logo.png" alt="">
+                                        <a href="#">ThrontonPlumbingllc.com</a>
+                                    </div>
+                                </div>
+                                <img src="<?php echo $img_dir; ?>/coupon-1.png" alt="just coupon image">
 								<img class="lozad" data-src="<?php echo $coupon_image; ?>" alt="<?php echo $coupon_title; ?>">
 
 								<?php if( shortcode_exists( 'coupon' ) ) : ?>

@@ -280,3 +280,10 @@ img.slogan {
 .c20-review-img{
     padding: 150px;
 }
+
+/*coupon style*/
+
+.coupon {
+    background-image: radial-gradient( circle at right bottom, #21699B, #14143C);
+}
+
