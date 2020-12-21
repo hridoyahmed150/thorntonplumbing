@@ -36,6 +36,13 @@ img.slogan {
     }
 }
 
+@media (max-width: 1440px) {
+    .banner-top img.slogan {
+        width: 300px;
+        left: 1%;
+    }
+}
+
 
 /*utility section style*/
 
@@ -179,7 +186,7 @@ img.slogan {
     }
 }
 
-@media screen and (max-width: 16000px) {
+@media screen and (max-width: 1600px) {
     .wh-left {
         width: 50%;
         padding: 0% 5%
