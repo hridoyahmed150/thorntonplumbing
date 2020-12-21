@@ -10,8 +10,8 @@ img.slogan {
 }
 
 .banner-top img.slogan {
-    left: 215px;
-    bottom: 125px;
+    left: 5%;
+    bottom: 20%;
     width: 400px;
 }
 
@@ -28,6 +28,12 @@ img.slogan {
 .banner-bottom .read-more {
     font-size: 18px;
     text-decoration: underline;
+}
+
+@media (max-width: 1600px) {
+    .banner-top img.slogan {
+        width: 350px;
+    }
 }
 
 
@@ -169,14 +175,14 @@ img.slogan {
 
     .wh-image-wrap {
         margin-top: -90px;
-        padding: 8% 10%
+        padding: 2% ;
     }
 }
 
-@media screen and (min-width: 1440px) {
+@media screen and (max-width: 16000px) {
     .wh-left {
         width: 50%;
-        padding: 5% 5%
+        padding: 0% 5%
     }
 }
 
@@ -211,8 +217,17 @@ img.slogan {
     background: #ebf0fa;
 }
 .client{
+    flex: 0 0 9%;
     max-width: 170px;
     padding: 0 15px;
+}
+
+@media (max-width: 1440px) {
+    .client{
+        flex: 0 0 15%;
+        max-width: 210px;
+    }
+
 }
 
 /*review section*/

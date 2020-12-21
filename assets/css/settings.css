@@ -175,7 +175,7 @@ a:focus {
 }
 
 .btn-primary {
-    background: linear-gradient(180deg, #FBD249 0%, #EEBE1D 100%) !important;
+    background: linear-gradient(#f8e03e,#b98e00) !important;
     color: #172750 !important;
     box-shadow: 0 2px 12px 0 rgba(0,0,0,0.3);
 }
@@ -195,7 +195,7 @@ a:focus {
 .btn-primary:not(:disabled):not(.disabled):active,
 .btn-primary:not(:disabled):not(.disabled).active,
 .show > .btn-primary.dropdown-toggle {
-    background: linear-gradient(180deg, #FBD249 0%, #EEBE1D 100%) !important;
+    background: linear-gradient(#f8e03e,#b98e00) !important;
     color: #172750 !important;
     border-color: transparent !important;
     box-shadow: 0 2px 12px 0 rgba(0,0,0,0.3);
@@ -496,7 +496,7 @@ a.text-secondary:focus,
 }
 
 .floating-lists .floating-list {
-    background-color: #004F7A;
+    background-color: #002959;
     box-shadow: 0 2px 4px 0 rgba(0,0,0,0.15);
     padding: 25px 15px 25px;
     margin-left: 10px;

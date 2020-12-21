@@ -49,7 +49,7 @@ $blurb_image = $blurb_link = '';
 		<?php if($coupons) : ?>
 
 			<div class="row">
-                <div class="col-sm-8 coupon-list d-flex">
+                <div class="col-sm-8 coupon-list d-flex my-5">
 
 				<?php foreach ( (array) $coupons as $key => $coupon_data ) :
 					$coupon_image 		= $coupon_data[$landing_meta.'coupon_image'];
@@ -60,16 +60,15 @@ $blurb_image = $blurb_link = '';
 
 					<?php if($coupon_title && $coupon_amount && $coupon_image && $key < 2) : ?>
 
-						<div class="mb-4 mb-lg-0 image-coupon" data-aos-duration="500" data-aos-delay="500" data-aos="zoom-in">
+						<div class="mb-4 mb-lg-0 image-coupon " data-aos-duration="500" data-aos-delay="500" data-aos="zoom-in">
 
 							<div class="print-coupon">
-                                <div class="coupon">
-                                    <div class="coupon-top d-flex justify-content-between">
-                                        <img src="<?php echo $img_dir; ?>/coupon-logo.png" alt="">
-                                        <a href="#">ThrontonPlumbingllc.com</a>
-                                    </div>
-                                </div>
-                                <img src="<?php echo $img_dir; ?>/coupon-1.png" alt="just coupon image">
+<!--                                <div class="coupon">-->
+<!--                                    <div class="coupon-top d-flex justify-content-between">-->
+<!--                                        <img src="--><?php //echo $img_dir; ?><!--/coupon-logo.png" alt="">-->
+<!--                                        <a href="#">ThrontonPlumbingllc.com</a>-->
+<!--                                    </div>-->
+<!--                                </div>-->
 								<img class="lozad" data-src="<?php echo $coupon_image; ?>" alt="<?php echo $coupon_title; ?>">
 
 								<?php if( shortcode_exists( 'coupon' ) ) : ?>
