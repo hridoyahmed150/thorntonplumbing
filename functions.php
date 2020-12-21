@@ -660,7 +660,58 @@ function c20_register_nap_module($atts){
 	return $data;
 }
 
+add_shortcode( 'c20_card', 'c20_styled_card' );
 
+function c20_styled_card($atts, $content = null){
+
+    extract( shortcode_atts( array(
+        'align'		=> 'left',
+        'text'		=> '',
+    ),  $atts));
+
+
+    $img_dir = get_template_directory_uri().'/assets/img/control';
+
+
+    $alignment = '';
+
+    switch ($align) {
+
+        case 'right':
+            $alignment = 'text-right';
+            break;
+
+        case 'center':
+            $alignment = 'text-center';
+            break;
+
+        default:
+            $alignment = 'text-left';
+            break;
+    }
+
+    $data = '';
+
+    ob_start();
+
+    if($text || $content) : ?>
+
+        <div class="c20-quote font-700 <?php echo $alignment; ?>" style="background-image: url(<?php echo $img_dir; ?>/content-card-bg.png);">
+
+            <?php
+            if($content) {
+                echo do_shortcode( $content );
+            } else {
+                echo $text;
+            }
+            ?>
+        </div>
+
+    <?php endif;
+
+    $output = ob_get_contents(); $data .= $output; ob_get_clean();
+    return $data;
+}
 
 add_shortcode( 'coupon', 'c20_register_promotion_details' );
 function c20_register_promotion_details($atts){
