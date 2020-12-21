@@ -30,16 +30,16 @@ img.slogan {
     text-decoration: underline;
 }
 
-@media (max-width: 1600px) {
+@media (min-width: 1440px) {
     .banner-top img.slogan {
         width: 350px;
+        left: 2%;
     }
 }
 
-@media (max-width: 1440px) {
+@media (min-width: 1600px) {
     .banner-top img.slogan {
-        width: 300px;
-        left: 1%;
+        width: 400px;
     }
 }
 
