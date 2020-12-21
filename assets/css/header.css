@@ -220,10 +220,17 @@ body {
         top: -55px;
     }
 }
-@media (min-width: 768px) and (max-width: 1199.98px) {
+@media (max-width: 1199.98px) {
     .navbar-brand img.static-img {
         width: 100%;
         top: -35px;
+    }
+}
+@media (max-width: 600.98px) {
+    .navbar-brand img.static-img {
+        width: 100%;
+        top: 0px;
+        position: relative;
     }
 }
 

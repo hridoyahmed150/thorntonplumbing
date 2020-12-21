@@ -100,7 +100,7 @@
 
 						<?php else : ?>
 
-                        <div class="coll-md-12 col-lg-3">
+                        <div class="col-md-3">
                             <a class="navbar-brand" href="<?php echo $site_url; ?>">
                                 <?php if($site_logo): ?>
                                     <img src="<?php echo esc_url( $site_logo); ?>" alt="<?php echo bloginfo('name'); ?>">
@@ -110,7 +110,7 @@
                             </a>
                         </div>
 
-						<div class="col-md-12 col-lg-3 pt-5" data-aos="fade-up" data-aos-duration="600" data-aos-delay="200">
+						<div class="col-md-3 pt-5" data-aos="fade-up" data-aos-duration="600" data-aos-delay="200">
 <!--							--><?php //dynamic_sidebar( 'footer-1' ); ?>
                             <address class="text-white address">Thornton Plumbing
                                 <p class="address">19923 Wagon Trail Dr.
@@ -123,15 +123,15 @@
                             </address>
 						</div>
 
-						<div class="col-md-12 col-lg-2 pt-5" data-aos="fade-up" data-aos-duration="600" data-aos-delay="400">
+						<div class="col-md-3 col-lg-2 pt-5" data-aos="fade-up" data-aos-duration="600" data-aos-delay="400">
 							<?php dynamic_sidebar( 'footer-2' ); ?>
 						</div>
 
-						<div class="col-md-12 col-lg-1 pt-5" data-aos="fade-up" data-aos-duration="600" data-aos-delay="600">
+						<div class="col-md-3 col-lg-1 pt-5" data-aos="fade-up" data-aos-duration="600" data-aos-delay="600">
 							<?php dynamic_sidebar( 'footer-3' ); ?>
 						</div>
 						
-						<div class="col-md-12 col-lg-3 pt-5" data-aos="fade-up" data-aos-duration="600" data-aos-delay="800">
+						<div class="col-md-3 col-lg-3 pt-5 service-number" data-aos="fade-up" data-aos-duration="600" data-aos-delay="800">
 							<?php dynamic_sidebar( 'footer-4' ); ?>
 						</div>
 					<?php endif; ?>

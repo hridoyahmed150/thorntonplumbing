@@ -2,7 +2,11 @@
 
 $banner_title = get_post_meta( get_the_ID(), $home_meta.'banner_title', 1 );
 
-$banner_images = get_post_meta( get_the_ID(), $home_meta . 'banner_images', 1 );
+$banner_images = get_post_meta( get_the_ID(), $home_meta . 'banner_bg', 1 );
+$banner_subtitle = get_post_meta( get_the_ID(), $home_meta . 'banner_subtitle', 1 );
+$banner_read_more_text = get_post_meta( get_the_ID(), $home_meta . 'banner_read_more', 1 );
+$banner_read_more_url = get_post_meta( get_the_ID(), $home_meta . 'banner_read_more_url', 1 );
+
 
 $banner_image  = $banner_image_url = '';
 
@@ -10,7 +14,7 @@ $phone      = c20_cmb2_get_general('general_phone');
 $wh_page    = c20_cmb2_get_general('general_wh_page');  ?>
  
 
-<div class="c20-sec has-image-bg c20-sec-home-banner pb-0" style="background-image: url(<?php echo $img_dir; ?>/banner-home.png);">
+<div class="c20-sec has-image-bg c20-sec-home-banner pb-0" style="background-image: url(<?php echo $banner_images; ?>);">
 
 <!--    <div class="container">-->
 <!---->
@@ -34,14 +38,15 @@ $wh_page    = c20_cmb2_get_general('general_wh_page');  ?>
         <div class="container">
             <div class="row">
                 <div class="col-sm-10 offset-sm-2 offset-xl-1">
-                    <h2 class="text-white">What our customers say about us</h2>
-                    <h6 class="text-white">“I'm taking this opportunity to let you know how pleased I am with the work your employees have done in correcting the mess…” - Mrs. Conor
-                        Read more Testimonials
-                        <a href="#">
-                            <span class="text-yellow">- Mrs. Conor</span>
-                        </a>
-                    </h6>
-                    <a href="#" class="read-more text-yellow">Read more Testimonials</a>
+                    <?php if ($banner_title): ?>
+                        <h2 class="text-white"><?php echo $banner_title ?></h2>
+                    <?php endif ?>
+
+                    
+                    <?php echo ($banner_subtitle) ? $banner_subtitle : "";?>
+                    <?php if ($banner_read_more_text) : ?>
+                        <a href="<?php echo ($banner_read_more_url) ? $banner_read_more_url : '#'; ?>" class="read-more text-yellow"><?php echo $banner_read_more_text?></a>
+                    <?php endif; ?>
                 </div>
             </div>
         </div>

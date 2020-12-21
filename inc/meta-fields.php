@@ -183,14 +183,32 @@ function c20_register_home_metabox() {
 		'type'       		=> 'textarea_small',
 	) );
 
+    $cmb_c20_home->add_field( array(
+        'name'       		=> esc_html__( 'Banner Subtitle', 'cmb2' ),
+        'id'         		=> $prefix . 'banner_subtitle',
+        'type'       		=> 'textarea_small',
+    ) );
+
+    $cmb_c20_home->add_field( array(
+        'name'       		=> esc_html__( 'Banner Read more', 'cmb2' ),
+        'id'         		=> $prefix . 'banner_read_more',
+        'type'       		=> 'textarea_small',
+    ) );
+
+    $cmb_c20_home->add_field( array(
+        'name'       		=> esc_html__( 'Banner Read more url', 'cmb2' ),
+        'id'         		=> $prefix . 'banner_read_more_url',
+        'type'       		=> 'text_url',
+    ) );
+
 
 	/*Start Home Page Service*/
-	$cmb_c20_home->add_field( array(
-		'before_row'   => '<h1>Service</h1><hr>',
-		'name'       => esc_html__( 'Service Section Title', 'cmb2' ),
-		'id'         => $prefix . 'service_heading',
-		'type'       => 'text',
-	) );
+//	$cmb_c20_home->add_field( array(
+//		'before_row'   => '<h1>Service</h1><hr>',
+//		'name'       => esc_html__( 'Service Section Title', 'cmb2' ),
+//		'id'         => $prefix . 'service_heading',
+//		'type'       => 'text',
+//	) );
 
 	/* Service */
 	$cmb_c20_service = $cmb_c20_home->add_field( array(
