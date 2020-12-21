@@ -19,7 +19,7 @@ $testimonial = $clients_name = $clients_role = '';
                          data-loaded="true">
                 </div>
             </div>
-            <div class="mx-5 mx-sm-5 m-md-0 my-5 wh-left">
+            <div class="wh-left">
                 <div class="point d-flex align-items-center">
                     <span class="label-circle pt-3 px-3"></span>
                     <h5 class="my-0 ml-3 text-blue">Fully Stocked Trucks In Your Neighborhood Now</h5>
@@ -111,11 +111,11 @@ $testimonial = $clients_name = $clients_role = '';
 
         <div class="row has-image-bg review-content" style="background-image: url(<?php echo $img_dir;?>/review-bg.png)">
 
-            <div class="col-md-6 c20-sec-review-inner mt-3 d-flex flex-column justify-content-start">
+            <div class="col-sm-12 col-lg-6 c20-sec-review-inner mt-3 d-flex flex-column justify-content-start">
                 <div class="group-review text-center mb-5 d-flex justify-content-center">
                     <div class="facebook-review media-review px-3">
                         <img src="<?php echo $img_dir; ?>/ionsocialfacebook.png" alt="">
-                        <p class="text-white m-0" >Facebook 5</p>
+                        <p class="text-white m-0" >Facebook</p>
                         <p class="text-white m-0">5</p>
                         <img class="star" src="<?php echo $img_dir;?>/control/testimonial-star.png" alt="">
                         <p class="review-count text-white m-0">12 + Reviews</p>
@@ -139,7 +139,7 @@ $testimonial = $clients_name = $clients_role = '';
                     <img src="<?php echo $img_dir;?>/review-logo.png" alt="review-logo">
                 </div>
             </div>
-            <div class="col-sm-6 c20-sec-review-slider">
+            <div class="col-sm-12 mt-4 mt-lg-0 col-lg-6 c20-sec-review-slider">
                 <?php if ($testimonials) : ?>
 
                     <div class="testimonial-slider" data-aos-duration="500" data-aos-delay="400"

@@ -49,7 +49,7 @@ $blurb_image = $blurb_link = '';
 		<?php if($coupons) : ?>
 
 			<div class="row">
-                <div class="col-sm-8 coupon-list d-flex my-5">
+                <div class="col-sm-12 col-lg-8 coupon-list d-flex my-5">
 
 				<?php foreach ( (array) $coupons as $key => $coupon_data ) :
 					$coupon_image 		= $coupon_data[$landing_meta.'coupon_image'];
@@ -84,7 +84,7 @@ $blurb_image = $blurb_link = '';
 
 				<?php endforeach; ?>
                 </div>
-                <div class="col-sm-4 position-relative coupon-slogan">
+                <div class="col-sm-12 col-lg-4 position-relative coupon-slogan">
                     <img class="slogan" src="<?php  echo $img_dir;?>/slogan.png" alt="">
                 </div>
 			</div>

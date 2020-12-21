@@ -2,7 +2,7 @@
 /*Banner*/
 
 .c20-sec-home-banner {
-    padding: 60px 0;
+    padding: 230px 0;
 }
 
 .home-banner-title {
@@ -12,10 +12,6 @@
 
 @media screen and ( min-width: 991px ) {
 
-    .c20-sec-home-banner {
-        padding: 100px 0;
-    }
-
     .home-banner-title {
         font-size: 50px;
     }
@@ -24,9 +20,6 @@
 
 @media screen and ( min-width: 1440px ) {
 
-    .c20-sec-home-banner {
-        padding: 150px 0;
-    }
 
     .home-banner-title {
         font-size: 60px;

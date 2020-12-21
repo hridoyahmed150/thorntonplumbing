@@ -33,7 +33,7 @@ $wh_page    = c20_cmb2_get_general('general_wh_page');  ?>
         <div class="overlay position-absolute"></div>
         <div class="container">
             <div class="row">
-                <div class="col-sm-10 offset-md-1">
+                <div class="col-sm-10 offset-sm-2 offset-xl-1">
                     <h2 class="text-white">What our customers say about us</h2>
                     <h6 class="text-white">“I'm taking this opportunity to let you know how pleased I am with the work your employees have done in correcting the mess…” - Mrs. Conor
                         Read more Testimonials

@@ -157,7 +157,7 @@ $site_url = ($is_wh_page) ? $wh_page : site_url('/');
 				<div class="header-top">`
 					<div class="container">
 						<div class="row">
-                            <div class="col-sm-8 d-flex justify-content-end align-items-center">
+                            <div class="offset-sm-2 col-sm-6 d-flex justify-content-end align-items-center">
                                 <p class="m-0">We’re open! Actions We Are Taking Regarding the COVID-19.</p>
                             </div>
                             <div class="col-sm-4 d-flex justify-content-end align-items-center">
