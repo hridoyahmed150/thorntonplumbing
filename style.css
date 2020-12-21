@@ -126,6 +126,11 @@ Tags: custom-background, custom-logo, custom-menu, featured-images, threaded-com
     .coupon-title {
         font-size: 25px;
     }
+
+    .coupon-slogan img.slogan {
+        bottom: -150px;
+         right: 0px;
+    }
 }
 
 @media screen and (min-width: 1440px) {
