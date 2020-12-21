@@ -132,7 +132,6 @@
 						</div>
 						
 						<div class="col-md-12 col-lg-3 pt-5" data-aos="fade-up" data-aos-duration="600" data-aos-delay="800">
-                            <div class="header-service text-right"> <a class="phone-lg" href="tel:317-697-9265"> 317-697-9265 </a></div>
 							<?php dynamic_sidebar( 'footer-4' ); ?>
 						</div>
 					<?php endif; ?>
