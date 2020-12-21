@@ -196,10 +196,10 @@ $site_url = ($is_wh_page) ? $wh_page : site_url('/');
 									<?php endif; ?>
 								</a>
 
-								<div class="header-controller">
-									<?php echo ($header_label) ? '<h3 class="header-label">'.$header_label.'</h3>' : ''; ?>
-									<a class="btn btn-primary btn-lg" href="<?php echo ($contact_page) ? $contact_page : '#'; ?>">Request Booking</a>
-								</div>
+<!--								<div class="header-controller">-->
+<!--									--><?php //echo ($header_label) ? '<h3 class="header-label">'.$header_label.'</h3>' : ''; ?>
+<!--									<a class="btn btn-primary btn-lg" href="--><?php //echo ($contact_page) ? $contact_page : '#'; ?><!--">Request Booking</a>-->
+<!--								</div>-->
 
 								<button class="hamburger hamburger--squeeze c20_ham" type="button">
 									<span class="hamburger-box">

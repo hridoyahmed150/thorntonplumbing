@@ -10,7 +10,7 @@ img.slogan {
 }
 
 .banner-top img.slogan {
-    left: 5%;
+    left: 2%;
     bottom: 20%;
     width: 400px;
 }
@@ -30,16 +30,30 @@ img.slogan {
     text-decoration: underline;
 }
 
+@media (min-width: 1199px) {
+    .banner-top img.slogan {
+        width: 300px;
+        left: 0;
+    }
+}
+
+@media (min-width: 1199px) {
+    .banner-top img.slogan {
+        width: 300px;
+        left: 0;
+    }
+}
+
 @media (min-width: 1440px) {
     .banner-top img.slogan {
         width: 350px;
-        left: 2%;
     }
 }
 
 @media (min-width: 1600px) {
     .banner-top img.slogan {
         width: 400px;
+        left: 5%;
     }
 }
 

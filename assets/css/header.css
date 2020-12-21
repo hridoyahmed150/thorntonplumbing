@@ -203,6 +203,13 @@ body {
     left: 0;
 }
 
+@media (min-width: 1199px) and (max-width: 1439.98px) {
+    .navbar-brand img.static-img {
+        width: 70%;
+        top: -55px;
+    }
+}
+
 .header-service {
     font-family: 'Montserrat';
     text-align: left;
@@ -720,7 +727,10 @@ body.mobile-menu-show .mobile-menu-wrap {
         top: -60px;
     }
 
-    .header-controller {
+    /*.header-controller {*/
+    /*    margin-left: auto;*/
+    /*}*/
+    .hamburger{
         margin-left: auto;
     }
 
