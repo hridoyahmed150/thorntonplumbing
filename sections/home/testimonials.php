@@ -2,6 +2,9 @@
 
 
 $testimonials = get_post_meta(get_the_ID(), $landing_meta . 'testimonials', true);
+$testimonials_banner = get_post_meta(get_the_ID(), $landing_meta . 'testimonial_banner', true);
+$service_terms_image = get_post_meta(get_the_ID(), $landing_meta . 'service_terms', true);
+$service_terms_list = get_post_meta(get_the_ID(), $landing_meta . 'service_provide', true);
 
 $testimonial = $clients_name = $clients_role = '';
 
@@ -12,50 +15,27 @@ $testimonial = $clients_name = $clients_role = '';
         <div class="row">
             <div class="px-3 px-sm-0 mb-4 mb-sm-5 m-md-0 wh-right aos-init aos-animate" data-aos-delay="600" data-aos-duration="800" data-aos="fade-right">
                 <div class="wh-image-wrap">
-                    <img class="lozad"
-                         data-src="https://www.reicheltplumbing.com/wp-content/themes/reicheltplumbing/assets/img/larege-van.png"
-                         alt="Service Van"
-                         src="<?php echo $img_dir; ?>/full-service.png  ?>"
-                         data-loaded="true">
+
+                    <?php if ($service_terms_image): ?>
+                        <img class="lozad"
+                             data-src="https://www.reicheltplumbing.com/wp-content/themes/reicheltplumbing/assets/img/larege-van.png"
+                             alt="Service Van"
+                             src="<?php echo $service_terms_image?>"
+                             data-loaded="true">
+                    <?php endif ?>
                 </div>
             </div>
             <div class="wh-left">
-                <div class="point d-flex align-items-center">
-                    <span class="label-circle pt-3 px-3"></span>
-                    <h5 class="my-0 ml-3 text-blue">Fully Stocked Trucks In Your Neighborhood Now</h5>
-                </div>
-                <div class="point d-flex align-items-center">
-                    <span class="label-circle pt-3 px-3"></span>
-                    <h5 class="my-0 ml-3 text-blue">24/7 Emergency Service</h5>
-                </div>
-                <div class="point d-flex align-items-center">
-                    <span class="label-circle pt-3 px-3"></span>
-                    <h5 class="my-0 ml-3 text-blue">Never An Overtime Charge</h5>
-                </div>
-                <div class="point d-flex align-items-center">
-                    <span class="label-circle pt-3 px-3"></span>
-                    <h5 class="my-0 ml-3 text-blue">Highly Trained Techs Standing By</h5>
-                </div>
-                <div class="point d-flex align-items-center">
-                    <span class="label-circle pt-3 px-3"></span>
-                    <h5 class="my-0 ml-3 text-blue">28 Years of Excellence in Plumbing</h5>
-                </div>
-                <div class="point d-flex align-items-center">
-                    <span class="label-circle pt-3 px-3"></span>
-                    <h5 class="my-0 ml-3 text-blue">Fully Licenced to ensure valid warranties</h5>
-                </div>
-                <div class="point d-flex align-items-center">
-                    <span class="label-circle pt-3 px-3"></span>
-                    <h5 class="my-0 ml-3 text-blue">Expert Plumbers with Ongoing Training</h5>
-                </div>
-                <div class="point d-flex align-items-center">
-                    <span class="label-circle pt-3 px-3"></span>
-                    <h5 class="my-0 ml-3 text-blue">Locally Owned Family Business</h5>
-                </div>
-                <div class="point d-flex align-items-center">
-                    <span class="label-circle pt-3 px-3"></span>
-                    <h5 class="my-0 ml-3 text-blue">Flexible Same Day Appointments</h5>
-                </div>
+                <?php
+                    foreach ( (array) $service_terms_list as $service_list ):
+                        $service_list_title =  $service_list[$landing_meta.'service_title'];
+
+                ?>
+                    <div class="point d-flex align-items-center">
+                        <span class="label-circle pt-3 px-3"></span>
+                        <h5 class="my-0 ml-3 text-blue"><?php echo $service_list_title?></h5>
+                    </div>
+                <?php endforeach;?>
             </div>
         </div>
     </div>
@@ -150,8 +130,7 @@ $testimonial = $clients_name = $clients_role = '';
                             <?php foreach ((array)$testimonials as $key => $testimonial_data) :
 
                                 $testimonial = $testimonial_data[$landing_meta . 'testimonial'];
-                                $clients_name = $testimonial_data[$landing_meta . 'clients_name'];
-                                $clients_role = $testimonial_data[$landing_meta . 'clients_role']; ?>
+                                $clients_name = $testimonial_data[$landing_meta . 'clients_name']; ?>
 
                                 <div class="testimonial-slide">
 
@@ -183,7 +162,9 @@ $testimonial = $clients_name = $clients_role = '';
         </div>
     </div>
 </div>
+<?php if ($testimonials_banner) : ?>
+    <div class="c20-sec c20-review-img has-image-bg " style="background-image: url(<?php echo $testimonials_banner ?>)">
+    </div>
+<?php endif; ?>
 
-<div class="c20-sec c20-review-img has-image-bg " style="background-image: url(<?php echo $img_dir?>/footer-banner.png)">
-</div>
 <!-- end section -->

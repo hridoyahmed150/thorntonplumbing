@@ -214,7 +214,7 @@ function c20_register_home_metabox() {
 	$cmb_c20_service = $cmb_c20_home->add_field( array(
 		'id'          => $prefix.'services',
 		'type'        => 'group',
-		'description' => __( '<h3>Add Service</h3>', 'cmb2' ),
+		'description' => __( '<h1>Service Group</h1>', 'cmb2' ),
 		'options'     => array(
 			'group_title'       => __( 'Service {#}', 'cmb2' ), 
 			'add_button'        => __( 'Add Another Service ', 'cmb2' ),
@@ -236,11 +236,11 @@ function c20_register_home_metabox() {
 		'type' => 'text_url',
 	) );
 
-	$cmb_c20_home->add_group_field( $cmb_c20_service, array(
-		'name' => 'Description',
-		'id'   => $prefix.'service_text',
-		'type' => 'textarea_small',
-	) );
+//	$cmb_c20_home->add_group_field( $cmb_c20_service, array(
+//		'name' => 'Description',
+//		'id'   => $prefix.'service_text',
+//		'type' => 'textarea_small',
+//	) );
 
 	$cmb_c20_home->add_group_field( $cmb_c20_service, array(
 		'name' => 'Service Icon',
@@ -249,16 +249,38 @@ function c20_register_home_metabox() {
 	) );
 
 	/* Blog  */
-	$cmb_c20_home->add_field( array(
+
+    $cmb_c20_blog = $cmb_c20_home->add_field( array(
+        'id'          => $prefix.'blog',
+        'type'        => 'group',
+        'description' => __( '<h1>Blog Group</h1>', 'cmb2' ),
+        'options'     => array(
+            'group_title'       => __( 'blog {#}', 'cmb2' ),
+            'add_button'        => __( 'Add Another Service ', 'cmb2' ),
+            'remove_button'     => __( 'Remove Service', 'cmb2' ),
+            'sortable'          => true,
+        ),
+    ) );
+	$cmb_c20_home->add_group_field($cmb_c20_blog, array(
 		'before_row'   => '<h1>Blog</h1><hr>',
-		'name'       => esc_html__( 'Section Title', 'cmb2' ),
+		'name'       => esc_html__( 'Blog Title', 'cmb2' ),
 		'id'         => $prefix . 'blog_heading',
 		'type'       => 'text',
 	) );
+    $cmb_c20_home->add_group_field($cmb_c20_blog, array(
+        'name'             => esc_html__('Title Font-Size', 'cmb2'),
+        'id'               => $prefix . 'font_size',
+        'type'             => 'radio',
+        'show_option_none' => true,
+        'options'          => array(
+            'h2' => __( '38px', 'cmb2' ),
+            'h3'   => __( '26px', 'cmb2' )
+        ),
+    ) );
 
-	$cmb_c20_home->add_field( array(
-		'name' => esc_html__( 'Button Text', 'cmb2' ),
-		'id'   => $prefix . 'blog_btn_txt',
+	$cmb_c20_home->add_group_field( $cmb_c20_blog, array(
+		'name' => esc_html__( 'Blog Description', 'cmb2' ),
+		'id'   => $prefix . 'blog_description',
 		'type' => 'text_medium',
 	) );
 
@@ -273,7 +295,7 @@ function c20_register_landing_page_metabox() {
 		'id'            => 'c20_landing_metabox',
 		'title'         => esc_html__( 'Landing Page Metabox', 'cmb2' ),
 		'object_types'  => array( 'page' ), // Post type
-		'show_on' 		=> array( 'key' => 'page-template', 'value' => array('template-home.php', 'template-wh.php') ),
+		'show_on' 		=> array( 'key' => 'page-template', 'value' => array('template-home.php') ),
 		'context'    	=> 'normal',
 		'priority'   	=> 'high',
 	) );
@@ -304,9 +326,9 @@ function c20_register_landing_page_metabox() {
 	) );
 
 	$cmb_c20_landing->add_group_field( $cmb_c20_coupon, array(
-		'name' => 'License',
+		'name' => 'Subtitle',
 		'id'   => 'c20_landing_coupon_subtitle',
-		'type' => 'text',
+		'type' => 'textarea_small',
 	) );
 
 	$cmb_c20_landing->add_group_field( $cmb_c20_coupon, array(
@@ -322,7 +344,31 @@ function c20_register_landing_page_metabox() {
 		'type' => 'textarea_small',
 	) );
 
-	
+    $cmb_c20_landing->add_field( array(
+        'before_row'   => '<h1>Service Provide</h1><hr>',
+        'name'          => esc_html__( 'Service Image' , 'cmb2' ),
+        'id'            => 'c20_landing_service_terms',
+        'type'          => 'file'
+    ) );
+
+    $cmb_c20_service_provide = $cmb_c20_landing->add_field(array(
+        'id' => 'c20_landing_service_provide',
+        'type' => 'group',
+        'description' => __('<h1>Add Service List</h1>', 'cmb2'),
+        'options' => array(
+            'group_title' => __('Service {#}', 'cmb2'),
+            'add_button' => __('Add Another Service ', 'cmb2'),
+            'remove_button' => __('Remove Service', 'cmb2'),
+            'sortable' => true,
+        ),
+    ));
+
+    $cmb_c20_landing->add_group_field($cmb_c20_service_provide, array(
+       'name' => esc_html__('Service Title', 'cmb2'),
+        'id' => 'c20_landing_service_title',
+        'type' => 'text'
+    ));
+
 	$cmb_c20_landing_testimonial = $cmb_c20_landing->add_field( array(
 		'id'          => 'c20_landing_testimonials',
 		'description' => __( '<h1>Add Testimonial</h1>', 'cmb2' ),
@@ -341,11 +387,11 @@ function c20_register_landing_page_metabox() {
 		'type' => 'textarea_small',
 	) );
 
-	$cmb_c20_landing->add_group_field( $cmb_c20_landing_testimonial, array(
-		'name' => 'Role',
-		'id'   => 'c20_landing_clients_role',
-		'type' => 'text',
-	) );
+//	$cmb_c20_landing->add_group_field( $cmb_c20_landing_testimonial, array(
+//		'name' => 'Role',
+//		'id'   => 'c20_landing_clients_role',
+//		'type' => 'text',
+//	) );
 
 	$cmb_c20_landing->add_group_field( $cmb_c20_landing_testimonial, array(
 		'name' => 'Testimonial',
@@ -353,6 +399,11 @@ function c20_register_landing_page_metabox() {
 		'type' => 'textarea_small',
 	) );
 
+    $cmb_c20_landing->add_field( array(
+        'name' => esc_html__('Testimonial Background Image', 'cmb2'),
+        'id' => 'c20_landing_testimonial_banner',
+        'type' => 'file'
+    ));
 
 	/* Area Served */
 		

@@ -736,49 +736,69 @@ function c20_register_promotion_details($atts){
 	<?php endif; ?>
 
 		<?php if($title && $amount) : ?>
-			<div class="text-center single-coupon">
-
-				<img src="<?php echo $img_dir; ?>/coupon-bg.jpg" alt="Background">
-
-				<div class="coupon-top">
-					<img src="<?php echo $img_dir; ?>/site-logo-v2.png" alt="Logo">
-					<h2 class="coupon-price" style="margin: 0;"> <span>$</span> <strong><?php echo $amount; ?></strong> Off</h2>
-				</div>
-				
-				<div class="coupon-body">
-
-					<?php if($title) : ?>
-						<div class="coupon-title"><?php echo $title; ?></div>
-					<?php endif; ?>
-
-					<?php if($subtitle): ?>
-						<p class="coupon-subtitle" style="margin: 0;"><?php echo $subtitle; ?></p>
-					<?php endif; ?>
-
-				</div>
-
-				<div class="coupon-footer">
-
-					<?php if($description): ?>
-						<div class="desclimer" style="text-align: left;"><?php echo $description; ?></div>
-					<?php endif; ?>
-
-					<?php 
-						$site_url = site_url();
-						$find = array( 'http://', 'https://' );
-						$replace = '';
-						$output = str_replace( $find, $replace, $site_url );
-					 ?>
-
-					<p style="margin: 0"><a href="<?php echo site_url('/'); ?>"><?php echo $output; ?></a></p>
-					
-				</div>
-					
-			</div>
+        <div class="coupon single-coupon">
+            <div class="coupon-top">
+                <img src="<?php echo $img_dir; ?>/coupon-logo.png" alt="" style="width: 90px">
+                <a href="#">ThrontonPlumbingllc.com</a>
+            </div>
+            <div class="coupon-price">
+                $ <strong><?php echo $amount ?></strong> off
+            </div>
+            <div class="coupon-body">
+                <div class="coupon-title">
+                    <?php echo $title ?>
+                </div>
+                <div class="coupon-subtitle text-center">
+                    <?php echo $subtitle ?>
+                </div>
+            </div>
+            <div class="coupon-footer text-center">
+                <?php echo $description ?>
+            </div>
+        </div>
+<!--			<div class="text-center single-coupon">-->
+<!---->
+<!--				<img src="--><?php //echo $img_dir; ?><!--/coupon-bg.jpg" alt="Background">-->
+<!---->
+<!--				<div class="coupon-top">-->
+<!--					<img src="--><?php //echo $img_dir; ?><!--/site-logo-v2.png" alt="Logo">-->
+<!--					<h2 class="coupon-price" style="margin: 0;"> <span>$</span> <strong>--><?php //echo $amount; ?><!--</strong> Off</h2>-->
+<!--				</div>-->
+<!--				-->
+<!--				<div class="coupon-body">-->
+<!---->
+<!--					--><?php //if($title) : ?>
+<!--						<div class="coupon-title">--><?php //echo $title; ?><!--</div>-->
+<!--					--><?php //endif; ?>
+<!---->
+<!--					--><?php //if($subtitle): ?>
+<!--						<p class="coupon-subtitle" style="margin: 0;">--><?php //echo $subtitle; ?><!--</p>-->
+<!--					--><?php //endif; ?>
+<!---->
+<!--				</div>-->
+<!---->
+<!--				<div class="coupon-footer">-->
+<!---->
+<!--					--><?php //if($description): ?>
+<!--						<div class="desclimer" style="text-align: left;">--><?php //echo $description; ?><!--</div>-->
+<!--					--><?php //endif; ?>
+<!---->
+<!--					--><?php //
+//						$site_url = site_url();
+//						$find = array( 'http://', 'https://' );
+//						$replace = '';
+//						$output = str_replace( $find, $replace, $site_url );
+//					 ?>
+<!---->
+<!--					<p style="margin: 0"><a href="--><?php //echo site_url('/'); ?><!--">--><?php //echo $output; ?><!--</a></p>-->
+<!--					-->
+<!--				</div>-->
+<!--					-->
+<!--			</div>-->
 
 			<?php else : ?>
 
-			<p>Use argument "title" "amount"</p>
+<!--			<p>Use argument "title" "amount"</p>-->
 
 		<?php endif; ?>
 		

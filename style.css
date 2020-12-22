@@ -42,58 +42,86 @@ Tags: custom-background, custom-logo, custom-menu, featured-images, threaded-com
 .single-coupon > div {
 	position: relative;
 }
-
+.coupon{
+    outline: 2px dashed rgba(255,255,255,.4);
+    outline-offset: -10px;
+    font-family: Arial;
+}
 .coupon-top {
-    padding: 20px 20px 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 20px 0;
 }
 
 .coupon-top img {
-    padding-bottom: 35px;
-    margin-bottom: 30px;
+
+}
+.coupon-top a{
+    color: #FFFFFF;
+    font-size: 9px;
+    margin-top: 15px;
+    font-weight: 500;
 }
 
 .coupon-price {
     display: flex;
     align-items: center;
     justify-content: center;
-    font-size: 30px;
+    font-size: 40px;
     line-height: 1 !important;
     text-transform: uppercase;
+    color: #FFFFFF;
+    margin-top: -10px;
 }
 
 .coupon-price strong {
-    font-size: 60px;
+    font-size: 80px;
     line-height: 1;
     margin: 0 5px;
 }
 
 .coupon-body {
-    background: #EEBE1D;
-    padding: 15px 3px 10px;
+    padding: 3px 0px 5px;
 }
 
 .coupon-title {
+    background: #EEBB02;
     font-family: Montserrat;
-    font-size: 22px;
     line-height: 1;
     color: #172750;
-    font-weight: bold;
     text-transform: uppercase;
-    margin-bottom: 10px;
+    font-size: 22px;
+    font-weight: 900;
+    padding: 10px 0px;
+    display: flex;
+    justify-content: center;
 }
 
 .coupon-body .coupon-subtitle {
-    font-size: 10px;
-    line-height: 1;
-    color: #172750;
+    background: #161139;
+    color: #ffffff;
     font-weight: 700;
+    padding: 5px 0px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+.coupon-body .coupon-subtitle p{
+    font-size: 12px;
+    margin: 0;
+}
+.coupon-body .coupon-subtitle span{
+    display: block;
+    font-size: 8px;
 }
 
 .coupon-footer {
-    background: #172750;
-    color: #dceefe;
-    padding: 10px 20px;
-    font-size: 12px;
+    color: #fff;
+    padding: 0px 40px 10px;
+    font-size: 11px;
+    font-weight: 700;
+    opacity: 0.6;
 }
 
 .coupon-footer a {
@@ -115,52 +143,10 @@ Tags: custom-background, custom-logo, custom-menu, featured-images, threaded-com
 
 @media screen and (min-width: 1199px) {
 
-    .coupon-top {
-        padding: 25px 35px 15px;
-    }
 
-    .coupon-price strong {
-        font-size: 80px;
-    }
-
-    .coupon-title {
-        font-size: 25px;
-    }
-
-    .coupon-slogan img.slogan {
-        bottom: -150px;
-         right: 0px;
-    }
 }
 
 @media screen and (min-width: 1440px) {
-
-    .coupon-top img {
-        padding-bottom: 50px;
-        margin-bottom: 40px;
-    }
-
-    .coupon-price {
-        font-size: 35px;
-        font-weight: 700;
-    }
-
-    .coupon-price strong {
-        font-size: 100px;
-    }
-
-    .coupon-title {
-        font-size: 28px;
-    }
-
-    .coupon-body .coupon-subtitle {
-        font-size: 12px;
-    }
-
-    .coupon-footer {
-        font-size: 13px;
-    }
-
 }
 
 
