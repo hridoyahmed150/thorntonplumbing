@@ -92,17 +92,21 @@
     }
 
 }
-
+.main-sidebar{
+    background: #F7F5F4;
+}
 .main-sidebar .widget-title {
-    font-size: 20px;
     line-height: 1.5;
     font-weight: 900;
-    color: #fff;
-    background-color: #172750;
     padding: 15px 20px;
     position: relative;
-    text-transform: uppercase;
     margin-bottom: 0;
+    background: #EEBE1D;
+    color: #172750;
+    font-size: 20px;
+}
+.widget_custom_html {
+    padding: 15px;
 }
 
 .main-sidebar .widget > ul {
@@ -494,6 +498,7 @@ span.wpcf7-list-item {
 .c20_collapse {
     background-color: #F7F5F4;
     border-bottom: 1px solid #fff;
+    padding: 5px 0px;
 }
 .c20_collapse.c20_collapse_open.collapse_icon .c20_collapse_header{
     color: #333333;
@@ -509,15 +514,14 @@ span.wpcf7-list-item {
 }
 
 .c20_collapse_header {
-    font-size: 20px;
+    font-size: 16px;
+    font-weight: 700;
     line-height: 1.5;
-    font-weight: 900;
     color: #333333;
     /*background-color: #172750;*/
     padding: 15px 20px;
     position: relative;
     cursor: pointer;
-    text-transform: uppercase;
     transition: .5s;
 }
 .c20_collapse .c20_collapse_header:hover{
@@ -616,4 +620,15 @@ span.wpcf7-list-item {
 .c20_collapse_contact .c20_collapse_header {
     background-color: #E12D2B;
     color: #fff;
+}
+
+
+/*new style */
+
+.page-subtitle{
+    font-size: 32px;
+}
+h2.banner-title{
+    font-size: 46px;
+    color: #EEBE1D;
 }

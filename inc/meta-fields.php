@@ -71,86 +71,120 @@ function c20_register_common_metabox() {
 	) );
 }
 
+add_action( 'cmb2_admin_init', 'c20_register_single_page_metabox' );
+function c20_register_single_page_metabox()
+{
+    $prefix = 'c20_page_';
 
-add_action( 'cmb2_admin_init', 'c20_register_global_banner_metabox' );
-function c20_register_global_banner_metabox() {
-	$prefix = 'c20_global_banner_';
+    $cmb_c20_gloabl_banner = new_cmb2_box(array(
+        'id' => $prefix . 'metabox',
+        'title' => esc_html__('Page Metabox', 'cmb2'),
+        'object_types' => array('page'), // Post type
+//        'show_on' => array( 'key' => 'page-template', 'value' => 'page.php' ),
+        'show_on_cb' => 'c20_hide_cmb_form_this_page', // function should return a bool value
+        'context' => 'normal',
+        'priority' => 'high',
+    ));
 
-	$cmb_c20_gloabl_banner = new_cmb2_box( array(
-		'id'            => $prefix . 'metabox',
-		'title'         => esc_html__( 'Page Metabox', 'cmb2' ),
-		'object_types'  => array( 'page', 'service' ), // Post type
-		// 'show_on' => array( 'key' => 'page-template', 'value' => 'template-home.php' ),
-		'show_on_cb' => 'c20_hide_cmb_form_this_page', // function should return a bool value
-		'context'    => 'normal',
-		'priority'   => 'high',
-	) );
+    /*Start single Page Banner*/
 
-	/*Start Home Page Banner*/
-
-	$cmb_c20_gloabl_banner->add_field( array(
-		'before_row'   => '<h1>Page Banner</h1><hr>',
-		'name'       => esc_html__( 'Banner Title', 'cmb2' ),
-		'id'         => $prefix . 'title',
-		'type'       => 'textarea_small',
-	) );
-
-	// $cmb_c20_gloabl_banner->add_field( array(
-	// 	'name'       => esc_html__( 'Banner Description', 'cmb2' ),
-	// 	'id'         => $prefix . 'banner_description',
-	// 	'type'       => 'textarea_small',
-	// ) );
-
-	// $cmb_c20_gloabl_banner->add_field( array(
-	// 	'name' => esc_html__( 'Banner Button Text', 'cmb2' ),
-	// 	'id'   => $prefix . 'banner_btn_txt',
-	// 	'type' => 'text_medium',
-	// ) );
-
-	// $cmb_c20_gloabl_banner->add_field( array(
-	// 	'name' => esc_html__( 'Banner Button URL', 'cmb2' ),
-	// 	'id'   => $prefix . 'banner_btn_url',
-	// 	'type' => 'text_url',
-	// ) );
-
-	// $cmb_c20_gloabl_banner->add_field( array(
-	// 	'name' => esc_html__( 'Banner Image', 'cmb2' ),
-	// 	'desc' => esc_html__( 'Upload an image or enter a URL.', 'cmb2' ),
-	// 	'id'   => $prefix . 'banner_image',
-	// 	'type' => 'file',
-	// ) );
-
-	$cmb_c20_gloabl_banner->add_field( array(
-		'name'             => 'Heading Tag',
-		'desc'             => 'Select HTML tag for Heading',
-		'id'   				=> $prefix . 'tag',
-		'type'             => 'select',
-		'default'          => 'div',
-		'options'          => array(
-			'h1' 	=> __( 'h1', 'cmb2' ),
-			'h2'   	=> __( 'h2', 'cmb2' ),
-			'h3'    => __( 'h3', 'cmb2' ),
-			'h4'    => __( 'h4', 'cmb2' ),
-			'h5'    => __( 'h5', 'cmb2' ),
-			'h5'    => __( 'h5', 'cmb2' ),
-			'h6'    => __( 'h5', 'cmb2' ),
-			'div'    => __( 'div', 'cmb2' ),
-		),
-	) );
-
-	$cmb_c20_gloabl_banner->add_field( array(
-		'name'             => 'Content Alignment',
-		'desc'             => 'Select banner content alignment',
-		'id'   				=> $prefix . 'alignment',
-		'type'             => 'select',
-		'default'          => 'left',
-		'options'          => array(
-			'center' => __( 'Center', 'cmb2' ),
-			'left'   => __( 'Left', 'cmb2' ),
-			'right'  => __( 'Right', 'cmb2' ),
-		),
-	) );
+    $cmb_c20_gloabl_banner->add_field( array(
+        'before_row'   => '<h1>Page Banner</h1><hr>',
+        'name'       => esc_html__( 'Banner Image', 'cmb2' ),
+        'id'         => $prefix . 'banner',
+        'type'       => 'file',
+    ) );
+    $cmb_c20_gloabl_banner->add_field( array(
+        'name'       => esc_html__( 'Banner title', 'cmb2' ),
+        'id'         => $prefix . 'banner_title',
+        'type'       => 'text',
+    ) );
+    $cmb_c20_gloabl_banner->add_field( array(
+        'name'       => esc_html__( 'Banner subtitle', 'cmb2' ),
+        'id'         => $prefix . 'banner_subtitle',
+        'type'       => 'text',
+    ) );
 }
+
+//add_action( 'cmb2_admin_init', 'c20_register_global_banner_metabox' );
+//function c20_register_global_banner_metabox() {
+//	$prefix = 'c20_global_banner_';
+//
+//	$cmb_c20_gloabl_banner = new_cmb2_box( array(
+//		'id'            => $prefix . 'metabox',
+//		'title'         => esc_html__( 'Page Metabox', 'cmb2' ),
+//		'object_types'  => array( 'page', 'service' ), // Post type
+//		// 'show_on' => array( 'key' => 'page-template', 'value' => 'template-home.php' ),
+//		'show_on_cb' => 'c20_hide_cmb_form_this_page', // function should return a bool value
+//		'context'    => 'normal',
+//		'priority'   => 'high',
+//	) );
+//
+//	/*Start Home Page Banner*/
+//
+//	$cmb_c20_gloabl_banner->add_field( array(
+//		'before_row'   => '<h1>Page Banner</h1><hr>',
+//		'name'       => esc_html__( 'Banner Title', 'cmb2' ),
+//		'id'         => $prefix . 'title',
+//		'type'       => 'textarea_small',
+//	) );
+//
+//	// $cmb_c20_gloabl_banner->add_field( array(
+//	// 	'name'       => esc_html__( 'Banner Description', 'cmb2' ),
+//	// 	'id'         => $prefix . 'banner_description',
+//	// 	'type'       => 'textarea_small',
+//	// ) );
+//
+//	// $cmb_c20_gloabl_banner->add_field( array(
+//	// 	'name' => esc_html__( 'Banner Button Text', 'cmb2' ),
+//	// 	'id'   => $prefix . 'banner_btn_txt',
+//	// 	'type' => 'text_medium',
+//	// ) );
+//
+//	// $cmb_c20_gloabl_banner->add_field( array(
+//	// 	'name' => esc_html__( 'Banner Button URL', 'cmb2' ),
+//	// 	'id'   => $prefix . 'banner_btn_url',
+//	// 	'type' => 'text_url',
+//	// ) );
+//
+//	// $cmb_c20_gloabl_banner->add_field( array(
+//	// 	'name' => esc_html__( 'Banner Image', 'cmb2' ),
+//	// 	'desc' => esc_html__( 'Upload an image or enter a URL.', 'cmb2' ),
+//	// 	'id'   => $prefix . 'banner_image',
+//	// 	'type' => 'file',
+//	// ) );
+//
+//	$cmb_c20_gloabl_banner->add_field( array(
+//		'name'             => 'Heading Tag',
+//		'desc'             => 'Select HTML tag for Heading',
+//		'id'   				=> $prefix . 'tag',
+//		'type'             => 'select',
+//		'default'          => 'div',
+//		'options'          => array(
+//			'h1' 	=> __( 'h1', 'cmb2' ),
+//			'h2'   	=> __( 'h2', 'cmb2' ),
+//			'h3'    => __( 'h3', 'cmb2' ),
+//			'h4'    => __( 'h4', 'cmb2' ),
+//			'h5'    => __( 'h5', 'cmb2' ),
+//			'h5'    => __( 'h5', 'cmb2' ),
+//			'h6'    => __( 'h5', 'cmb2' ),
+//			'div'    => __( 'div', 'cmb2' ),
+//		),
+//	) );
+//
+//	$cmb_c20_gloabl_banner->add_field( array(
+//		'name'             => 'Content Alignment',
+//		'desc'             => 'Select banner content alignment',
+//		'id'   				=> $prefix . 'alignment',
+//		'type'             => 'select',
+//		'default'          => 'left',
+//		'options'          => array(
+//			'center' => __( 'Center', 'cmb2' ),
+//			'left'   => __( 'Left', 'cmb2' ),
+//			'right'  => __( 'Right', 'cmb2' ),
+//		),
+//	) );
+//}
 
 add_action( 'cmb2_admin_init', 'c20_register_home_metabox' );
 

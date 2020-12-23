@@ -157,10 +157,10 @@ $site_url = ($is_wh_page) ? $wh_page : site_url('/');
 				<div class="header-top">`
 					<div class="container">
 						<div class="row">
-                            <div class="offset-sm-2 col-sm-6 d-flex justify-content-end align-items-center">
+                            <div class="offset-md-2 col-12 col-md-6 mb-3 mb-md-0 d-flex justify-content-center justify-content-md-end align-items-center" >
                                 <p class="m-0">We’re open! Actions We Are Taking Regarding the COVID-19.</p>
                             </div>
-                            <div class="col-sm-4 d-flex justify-content-end align-items-center">
+                            <div class="col-12 col-md-4 d-flex justify-content-center justify-content-md-end align-items-center">
 								
 								<?php echo do_shortcode( '[c20_social]' ); ?>
 
@@ -196,10 +196,10 @@ $site_url = ($is_wh_page) ? $wh_page : site_url('/');
 									<?php endif; ?>
 								</a>
 
-<!--								<div class="header-controller">-->
-<!--									--><?php //echo ($header_label) ? '<h3 class="header-label">'.$header_label.'</h3>' : ''; ?>
-<!--									<a class="btn btn-primary btn-lg" href="--><?php //echo ($contact_page) ? $contact_page : '#'; ?><!--">Request Booking</a>-->
-<!--								</div>-->
+								<div class="header-controller">
+									<?php echo ($header_label) ? '<h3 class="header-label text-white">'.$header_label.'</h3>' : ''; ?>
+									<a class="btn btn-primary btn-lg" href="<?php echo ($contact_page) ? $contact_page : '#'; ?>">Request Booking</a>
+								</div>
 
 								<button class="hamburger hamburger--squeeze c20_ham" type="button">
 									<span class="hamburger-box">

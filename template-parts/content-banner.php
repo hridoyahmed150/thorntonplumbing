@@ -17,9 +17,12 @@ if(is_home() && !is_front_page()){
 	$post_id = get_option( 'page_for_posts' );
 }
 
+$page_banner_prefix = 'c20_page_';
+$page_banner_bg = get_post_meta( get_the_ID() , $page_banner_prefix . 'banner', 1 );
+$page_banner_title = get_post_meta( get_the_ID() , $page_banner_prefix . 'banner_title', 1 );
+$page_banner_subtitle = get_post_meta( get_the_ID() , $page_banner_prefix . 'banner_subtitle', 1 );
 
-
-$show_page_title = get_post_meta( $post_id, 'c20_common_title_show', 1 ); 
+$show_page_title = get_post_meta( $post_id, 'c20_common_title_show', 1 );
 
 $prefix = 'c20_global_banner_';
 
@@ -99,14 +102,15 @@ if($banner_alignment){
 ?>
  
 
-<div class="<?php echo implode(' ', $banner_class); ?>" style="background-color:#364D7E;" data-background-image="<?php echo get_template_directory_uri(); ?>/assets/img/page-banner.png">
+<div class="<?php echo implode(' ', $banner_class); ?>" style="background-color:#364D7E;" data-background-image="<?php echo ($page_banner_bg) ? $page_banner_bg : ''?>">
 
 	<div class="container py-lg-2">
 		<div class="row py-2 py-md-3 py-lg-0">
 			<div class="col-sm-12">
-				<?php if($show_page_title || $final_banner_title) : ?>
-
-					<<?php echo $banner_title_tag ?> class="text-light h1 m-0 banner-title" data-aos="fade-left" data-aos-duration="700" data-aos-delay="300"><?php echo $final_banner_title; ?></<?php echo $banner_title_tag ?>>
+				<?php if($page_banner_title || $page_banner_subtitle) : ?>
+                    <h3 class="page-subtitle text-white font-italic" data-aos="fade-right" data-aos-duration="300" data-aos-delay="100"><?php echo $page_banner_subtitle; ?></h3>
+					<h2 class="m-0 banner-title font-italic" data-aos="fade-left" data-aos-duration="700" data-aos-delay="300"><?php echo $page_banner_title; ?>
+                    </h2>
 
 				<?php endif; ?>
 			</div>

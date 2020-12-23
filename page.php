@@ -15,8 +15,7 @@
 get_header();
 
 $img_dir			= get_template_directory_uri().'/assets/img';
-$global_blog_page	= c20_cmb2_get_general('general_blog_page'); 
-
+$global_blog_page	= c20_cmb2_get_general('general_blog_page');
 while(have_posts()) :  ?>
 
 
@@ -37,8 +36,9 @@ while(have_posts()) :  ?>
 
 				</div>
 
+                    <?php get_sidebar(); ?>
 
-				<?php get_sidebar(); ?>
+
 
 			</div>
 		</div>
